@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-80498ca3c9f68aa5c151.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "livox_ros2_driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_ros2_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_ros2_driver-d54ea22af99de58ab2db.json",
+					"name" : "livox_ros2_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_ros2_driver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_ros2_driver_node-3fbb816bcbd2452b82f7.json",
+					"name" : "livox_ros2_driver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_ros2_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_ros2_driver_uninstall-4b5d7e05d1d4331101ef.json",
+					"name" : "livox_ros2_driver_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-8d27a9081c746c178543.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/uos-robotics/ws_livox/build/livox_ros2_driver",
+		"source" : "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

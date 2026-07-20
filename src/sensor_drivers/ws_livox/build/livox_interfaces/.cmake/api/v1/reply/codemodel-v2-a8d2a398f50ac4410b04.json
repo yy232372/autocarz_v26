@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-90b5fa81a59a68e2cce2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "livox_interfaces__py",
+					"jsonFile" : "directory-livox_interfaces__py-1a8829d222a1343bac06.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/uos-robotics/ws_livox/build/livox_interfaces/livox_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "livox_interfaces__rs",
+					"jsonFile" : "directory-livox_interfaces__rs-cadcd81d13867e313bd8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/uos-robotics/ws_livox/build/livox_interfaces/livox_interfaces__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "livox_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_livox_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_livox_interfaces_egg-a8a12daea248d8827e3a.json",
+					"name" : "ament_cmake_python_build_livox_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_livox_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_livox_interfaces-29664ab5a0887b99f133.json",
+					"name" : "ament_cmake_python_symlink_livox_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces-7c319c1e47a810e09208.json",
+					"name" : "livox_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces__cpp-2e04c7d7487d6a5b42d1.json",
+					"name" : "livox_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "livox_interfaces__py::@252929988e972c37b217",
+					"jsonFile" : "target-livox_interfaces__py-4894f17a27dad995a5f8.json",
+					"name" : "livox_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces__rosidl_generator_c-b3be0762be6af03a9625.json",
+					"name" : "livox_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces__rosidl_generator_py-b837826f240d14f6fcd0.json",
+					"name" : "livox_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces__rosidl_generator_type_description-c2a7d4cc65c638814f38.json",
+					"name" : "livox_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces__rosidl_typesupport_c-b0031fe9e902f72c84d6.json",
+					"name" : "livox_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces__rosidl_typesupport_cpp-4463b7a9f98fc46c9451.json",
+					"name" : "livox_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces__rosidl_typesupport_fastrtps_c-984a4b43804624f47567.json",
+					"name" : "livox_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces__rosidl_typesupport_fastrtps_cpp-b88afcd049c0ee4d63fc.json",
+					"name" : "livox_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces__rosidl_typesupport_introspection_c-eb2361891bbea3ada10a.json",
+					"name" : "livox_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces__rosidl_typesupport_introspection_cpp-efb858c2ef9f84dccd99.json",
+					"name" : "livox_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "livox_interfaces__rs::@8ee59d290d189d1123a0",
+					"jsonFile" : "target-livox_interfaces__rs-b9719b7b6ff69087a8d3.json",
+					"name" : "livox_interfaces__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces_s__rosidl_typesupport_c-67876a2f2538c2959c0a.json",
+					"name" : "livox_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces_s__rosidl_typesupport_fastrtps_c-f4c8d765366125d2916c.json",
+					"name" : "livox_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces_s__rosidl_typesupport_introspection_c-69bc420a20f55332a6e1.json",
+					"name" : "livox_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "livox_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-livox_interfaces_uninstall-25bc68c499003814bb3f.json",
+					"name" : "livox_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-fabd86b377563173e981.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/uos-robotics/ws_livox/build/livox_interfaces",
+		"source" : "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

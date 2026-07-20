@@ -1,0 +1,30 @@
+<launch>
+    <!-- 1. 리매핑 설정 (실제 실행하기 전에 미리 이름을 예약합니다) -->
+    <!-- 모든 노드에 적용되도록 include 밖에 적습니다 -->
+    <remap from="/camera/infra1/image_rect_raw" to="/stereo/left/image_raw" />
+    <remap from="/camera/infra1/camera_info"     to="/stereo/left/camera_info" />
+    <remap from="/camera/infra2/image_rect_raw" to="/stereo/right/image_raw" />
+    <remap from="/camera/infra2/camera_info"     to="/stereo/right/camera_info" />
+    <remap from="/camera/imu"                    to="/imu" />
+
+    <!-- 2. RealSense 실행 -->
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+        <arg name="enable_infra1"     value="true"/>
+        <arg name="enable_infra2"     value="true"/>
+        <arg name="infra_width"       value="640"/>
+        <arg name="infra_height"      value="480"/>
+        <arg name="infra_fps"         value="30"/>
+        
+        <arg name="enable_gyro"       value="true"/>
+        <arg name="enable_accel"      value="true"/>
+        <arg name="unite_imu_method"  value="linear_interpolation"/> 
+
+        <arg name="enable_color"      value="false"/>
+        <arg name="enable_depth"      value="false"/>
+        <arg name="enable_pointcloud" value="false"/>
+        <arg name="publish_tf"        value="true"/>
+    </include>
+
+    <!-- 점 패턴(Projector) 끄기 -->
+    <param name="/camera/stereo_module/emitter_enabled" value="0" />
+</launch>
