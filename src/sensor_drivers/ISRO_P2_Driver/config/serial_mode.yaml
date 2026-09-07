@@ -1,0 +1,18 @@
+ISRO_P2_Driver_node:
+  ros__parameters:
+    # --- Connection Mode ---
+    mode: "serial"
+    
+    # Serial Config
+    serial:
+      port: "/dev/ttyUSB0"
+      baud: 921600
+    
+    # --- Common Configuration ---
+    frame_id: "gps_link"
+    imu_frame_id: "imu_link"
+    
+    publish_rate: 100.0        # 장비 출력 속도와 맞춤 (데이터 손실 방지)
+    publish_raw_imu: true     # 100Hz IMU 데이터 발행 여부
+    use_enu: true             # true: ENU (ROS표준), false: NED
+    heading_offset_deg: 0.0    # 차량 장착 방향 보정값 (ROS yaw 기준, degrees)
