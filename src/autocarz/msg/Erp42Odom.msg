@@ -1,0 +1,2 @@
+nav_msgs/Odometry odometry
+int32 cur_waypoint_indx

@@ -1,7 +1,7 @@
 sdk_core/CMakeFiles/livox_sdk_static.dir/src/comm/comm_port.cpp.o: \
- /home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/src/comm/comm_port.cpp \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/src/comm/comm_port.cpp \
  /usr/include/stdc-predef.h \
- /home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/comm/comm_port.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/comm/comm_port.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,7 +18,7 @@ sdk_core/CMakeFiles/livox_sdk_static.dir/src/comm/comm_port.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
- /home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/comm/protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/comm/protocol.h \
  /usr/include/stdio.h /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -152,6 +152,6 @@ sdk_core/CMakeFiles/livox_sdk_static.dir/src/comm/comm_port.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/src/comm/sdk_protocol.h \
- /home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/../include/comm/protocol.h \
- /home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/../include/third_party/FastCRC/FastCRC.h
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/src/comm/sdk_protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/../include/comm/protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/../include/third_party/FastCRC/FastCRC.h

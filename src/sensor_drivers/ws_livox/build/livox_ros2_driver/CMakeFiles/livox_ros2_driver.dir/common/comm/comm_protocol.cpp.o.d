@@ -1,7 +1,7 @@
 CMakeFiles/livox_ros2_driver.dir/common/comm/comm_protocol.cpp.o: \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/comm_protocol.cpp \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/comm_protocol.cpp \
  /usr/include/stdc-predef.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/comm_protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/comm_protocol.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,10 +18,10 @@ CMakeFiles/livox_ros2_driver.dir/common/comm/comm_protocol.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/gps_protocol.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/protocol.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/sdk_protocol.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/FastCRC/FastCRC.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/gps_protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/sdk_protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/FastCRC/FastCRC.h \
  /usr/include/stdio.h /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \

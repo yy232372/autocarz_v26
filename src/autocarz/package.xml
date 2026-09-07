@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+
+<package format="3">
+
+  <name>autocarz</name>
+  <version>0.0.0</version>
+
+  <description>
+    ROS 2 port of the autocarz autonomous-driving package.
+  </description>
+
+  <maintainer email="jnghn42@todo.todo">
+    jnghn42
+  </maintainer>
+
+  <!-- 원 프로젝트의 라이선스가 확인되면 실제 라이선스로 변경해야 함 -->
+  <license>TODO</license>
+
+  <!-- =========================================================================
+       1. 빌드 시스템
+       ========================================================================= -->
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- =========================================================================
+       2. 사용자 정의 메시지 생성
+       ========================================================================= -->
+
+  <build_depend>rosidl_default_generators</build_depend>
+  <depend>rosidl_default_runtime</depend>
+
+  <!-- =========================================================================
+       3. ROS 2 C++ 및 Python
+       ========================================================================= -->
+
+  <depend>rclcpp</depend>
+  <depend>rclpy</depend>
+
+  <!-- =========================================================================
+       4. ROS 2 메시지 패키지
+       ========================================================================= -->
+
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+
+  <!-- =========================================================================
+       5. 패키지 경로 탐색
+       ========================================================================= -->
+
+  <depend>ament_index_cpp</depend>
+  <exec_depend>ament_index_python</exec_depend>
+
+  <!-- =========================================================================
+       6. PointCloud / PCL
+       ========================================================================= -->
+
+  <depend>pcl_conversions</depend>
+  <build_depend>libpcl-all-dev</build_depend>
+  <build_depend>eigen</build_depend>
+
+  <!-- =========================================================================
+       7. Python PointCloud 및 TF
+       ========================================================================= -->
+
+  <exec_depend>sensor_msgs_py</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+
+  <!-- =========================================================================
+       8. ROS 2 Launch
+       ========================================================================= -->
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- =========================================================================
+       9. RViz
+       ========================================================================= -->
+
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>rviz_2d_overlay_msgs</exec_depend>
+
+  <!-- =========================================================================
+       10. Python 외부 라이브러리
+       ========================================================================= -->
+
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  <exec_depend>python3-serial</exec_depend>
+  <exec_depend>python3-pyqt5</exec_depend>
+
+  <!-- FilterPy는 Ubuntu/ROS 배포판에 따라 rosdep 패키지 키가 없을 수 있으므로
+       package.xml에 넣지 않고 별도로 설치함 -->
+
+  <!-- =========================================================================
+       11. 테스트
+       ========================================================================= -->
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- =========================================================================
+       12. 인터페이스 패키지 선언
+       ========================================================================= -->
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <!-- =========================================================================
+       13. 빌드 타입
+       ========================================================================= -->
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

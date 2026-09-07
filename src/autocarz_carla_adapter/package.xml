@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>autocarz_carla_adapter</name>
+  <version>0.0.0</version>
+  <description>CARLA-to-real-topic adapter for testing autocarz launch files without modifying autocarz.</description>
+  <maintainer email="jnghn42@todo.todo">jnghn42</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>autocarz</exec_depend>
+  <exec_depend>ackermann_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

@@ -1,7 +1,7 @@
 CMakeFiles/livox_ros2_driver.dir/timesync/timesync.cpp.o: \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/timesync.cpp \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/timesync.cpp \
  /usr/include/stdc-predef.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/timesync.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/timesync.h \
  /usr/include/c++/13/thread /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
@@ -89,13 +89,13 @@ CMakeFiles/livox_ros2_driver.dir/timesync/timesync.cpp.o: \
  /usr/include/linux/errno.h /usr/include/aarch64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/comm_protocol.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/gps_protocol.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/protocol.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/sdk_protocol.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/FastCRC/FastCRC.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/comm_device.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/user_uart/user_uart.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/comm_protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/gps_protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/sdk_protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/FastCRC/FastCRC.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/comm_device.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/user_uart/user_uart.h \
  /usr/include/aarch64-linux-gnu/sys/types.h /usr/include/endian.h \
  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \

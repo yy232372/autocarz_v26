@@ -1,7 +1,7 @@
 CMakeFiles/livox_ros2_driver.dir/common/comm/gps_protocol.cpp.o: \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/gps_protocol.cpp \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/gps_protocol.cpp \
  /usr/include/stdc-predef.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/gps_protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/gps_protocol.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,7 +18,7 @@ CMakeFiles/livox_ros2_driver.dir/common/comm/gps_protocol.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/protocol.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm/protocol.h \
  /usr/include/ctype.h /usr/include/aarch64-linux-gnu/bits/endian.h \
  /usr/include/aarch64-linux-gnu/bits/endianness.h \
  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \

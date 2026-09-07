@@ -1,1 +1,0 @@
-/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_typesupport_introspection_c/livox_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h

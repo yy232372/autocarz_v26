@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1"
-  "/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-build"
-  "/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix"
-  "/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/tmp"
-  "/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp"
-  "/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src"
-  "/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-build"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/tmp"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp${cfgdir}") # cfgdir has leading slash
 endif()

@@ -1,7 +1,7 @@
 CMakeFiles/livox_ros2_driver.dir/timesync/user_uart/user_uart.cpp.o: \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/user_uart/user_uart.cpp \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/user_uart/user_uart.cpp \
  /usr/include/stdc-predef.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/user_uart/user_uart.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/user_uart/user_uart.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

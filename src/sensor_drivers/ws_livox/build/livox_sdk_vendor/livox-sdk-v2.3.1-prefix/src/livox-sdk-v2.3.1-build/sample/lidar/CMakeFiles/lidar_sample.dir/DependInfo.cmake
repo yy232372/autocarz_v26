@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sample/lidar/main.c" "sample/lidar/CMakeFiles/lidar_sample.dir/main.c.o" "gcc" "sample/lidar/CMakeFiles/lidar_sample.dir/main.c.o.d"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sample/lidar/main.c" "sample/lidar/CMakeFiles/lidar_sample.dir/main.c.o" "gcc" "sample/lidar/CMakeFiles/lidar_sample.dir/main.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

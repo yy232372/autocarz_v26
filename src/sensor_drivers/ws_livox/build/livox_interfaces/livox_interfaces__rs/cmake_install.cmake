@@ -1,8 +1,8 @@
-# Install script for directory: /home/uos-robotics/ws_livox/build/livox_interfaces/livox_interfaces__rs
+# Install script for directory: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/livox_interfaces__rs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/uos-robotics/ws_livox/install/livox_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

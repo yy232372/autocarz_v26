@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces
+CMAKE_SOURCE_DIR = /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uos-robotics/ws_livox/build/livox_interfaces
+CMAKE_BINARY_DIR = /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces
 
 # Utility rule file for livox_interfaces_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/livox_interfaces_uninstall.dir/compiler_depend.make
 include CMakeFiles/livox_interfaces_uninstall.dir/progress.make
 
 CMakeFiles/livox_interfaces_uninstall:
-	/usr/bin/cmake -P /home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 livox_interfaces_uninstall: CMakeFiles/livox_interfaces_uninstall
 livox_interfaces_uninstall: CMakeFiles/livox_interfaces_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/livox_interfaces_uninstall.dir/clean:
 .PHONY : CMakeFiles/livox_interfaces_uninstall.dir/clean
 
 CMakeFiles/livox_interfaces_uninstall.dir/depend:
-	cd /home/uos-robotics/ws_livox/build/livox_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ws_livox/build/livox_interfaces /home/uos-robotics/ws_livox/build/livox_interfaces /home/uos-robotics/ws_livox/build/livox_interfaces/CMakeFiles/livox_interfaces_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/CMakeFiles/livox_interfaces_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/livox_interfaces_uninstall.dir/depend
 

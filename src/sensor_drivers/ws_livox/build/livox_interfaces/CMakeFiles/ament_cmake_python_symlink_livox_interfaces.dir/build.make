@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces
+CMAKE_SOURCE_DIR = /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uos-robotics/ws_livox/build/livox_interfaces
+CMAKE_BINARY_DIR = /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces
 
 # Utility rule file for ament_cmake_python_symlink_livox_interfaces.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_symlink_livox_interfaces.dir/compiler_depe
 include CMakeFiles/ament_cmake_python_symlink_livox_interfaces.dir/progress.make
 
 CMakeFiles/ament_cmake_python_symlink_livox_interfaces:
-	/usr/bin/cmake -E create_symlink /home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_py/livox_interfaces /home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_python/livox_interfaces/livox_interfaces
+	/usr/bin/cmake -E create_symlink /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_py/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_python/livox_interfaces/livox_interfaces
 
 ament_cmake_python_symlink_livox_interfaces: CMakeFiles/ament_cmake_python_symlink_livox_interfaces
 ament_cmake_python_symlink_livox_interfaces: CMakeFiles/ament_cmake_python_symlink_livox_interfaces.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_symlink_livox_interfaces.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_symlink_livox_interfaces.dir/clean
 
 CMakeFiles/ament_cmake_python_symlink_livox_interfaces.dir/depend:
-	cd /home/uos-robotics/ws_livox/build/livox_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ws_livox/build/livox_interfaces /home/uos-robotics/ws_livox/build/livox_interfaces /home/uos-robotics/ws_livox/build/livox_interfaces/CMakeFiles/ament_cmake_python_symlink_livox_interfaces.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/CMakeFiles/ament_cmake_python_symlink_livox_interfaces.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_symlink_livox_interfaces.dir/depend
 

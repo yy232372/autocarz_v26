@@ -1,0 +1,43 @@
+[  6%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_hub.cpp.o
+[ 12%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_lidar.cpp.o
+[ 25%] Built target livox_ros2_driver_node
+[ 31%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/livox_ros2_driver.cpp.o
+[ 37%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lddc.cpp.o
+[ 43%] Linking CXX shared library liblivox_ros2_driver.so
+[100%] Built target livox_ros2_driver
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/lib/livox_ros2_driver/livox_ros2_driver_node
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/environment/library_path.sh
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/environment/library_path.dsv
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/lib/liblivox_ros2_driver.so
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/config/livox_hub.rviz
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/config/livox_hub_config.json
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/config/livox_lidar.rviz
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/config/livox_lidar_config.json
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/launch/__pycache__/livox_lidar_launch.cpython-312.pyc
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/launch/livox_hub_launch.py
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/launch/livox_hub_msg_launch .py
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/launch/livox_hub_rviz_launch.py
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/launch/livox_lidar_launch.py
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/launch/livox_lidar_msg_launch.py
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/launch/livox_lidar_rviz_launch.py
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/launch/livox_template_launch.py
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/ament_index/resource_index/package_run_dependencies/livox_ros2_driver
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/ament_index/resource_index/parent_prefix_path/livox_ros2_driver
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/environment/ament_prefix_path.sh
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/environment/ament_prefix_path.dsv
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/environment/path.sh
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/environment/path.dsv
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/local_setup.bash
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/local_setup.sh
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/local_setup.zsh
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/local_setup.dsv
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/package.dsv
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/ament_index/resource_index/packages/livox_ros2_driver
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/ament_index/resource_index/rclcpp_components/livox_ros2_driver
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/cmake/livox_ros2_driverConfig.cmake
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/cmake/livox_ros2_driverConfig-version.cmake
+-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver/share/livox_ros2_driver/package.xml

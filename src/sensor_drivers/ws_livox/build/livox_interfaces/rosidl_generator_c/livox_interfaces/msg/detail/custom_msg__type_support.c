@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "livox_interfaces/msg/detail/custom_msg__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "livox_interfaces/msg/detail/custom_msg__functions.h"
 #include "livox_interfaces/msg/detail/custom_msg__struct.h"
+#include "livox_interfaces/msg/detail/custom_msg__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

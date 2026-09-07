@@ -1,8 +1,8 @@
-# Install script for directory: /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_sdk_vendor
+# Install script for directory: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_sdk_vendor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/uos-robotics/ws_livox/install/livox_sdk_vendor")
+  set(CMAKE_INSTALL_PREFIX "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/uos-robotics/ws_livox/build/livox_sdk_vendor/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/uos-robotics/ws_livox/build/livox_sdk_vendor/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

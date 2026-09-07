@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "livox_interfaces__rs",
+		"source" : "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/livox_interfaces__rs"
+	}
+}

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include -I/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/third_party/FastCRC -I/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/third_party/spdlog -I/home/uos-robotics/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/third_party/cmdline
+CXX_INCLUDES = -I/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include -I/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/third_party/FastCRC -I/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/third_party/spdlog -I/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1/sdk_core/include/third_party/cmdline
 
 CXX_FLAGS = -Wno-c++20-compat -pthread -std=gnu++11 -fPIE
 

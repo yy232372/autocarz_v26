@@ -1,2 +1,0 @@
-nav_msgs/Odometry odometry
-int32 curWaypointIndx

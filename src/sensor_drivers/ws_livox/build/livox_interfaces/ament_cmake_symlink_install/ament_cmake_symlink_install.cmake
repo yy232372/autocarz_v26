@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/uos-robotics/ws_livox/install/livox_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/uos-robotics/ws_livox/install/livox_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/uos-robotics/ws_livox/install/livox_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/uos-robotics/ws_livox/install/livox_interfaces/${destination}")
+      set(destination "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -315,140 +315,140 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomPoint.json" "DESTINATION" "share/livox_interfaces/msg")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomPoint.json" "DESTINATION" "share/livox_interfaces/msg")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomPoint.json" "DESTINATION" "share/livox_interfaces/msg")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomPoint.json" "DESTINATION" "share/livox_interfaces/msg")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomMsg.json" "DESTINATION" "share/livox_interfaces/msg")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomMsg.json" "DESTINATION" "share/livox_interfaces/msg")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomMsg.json" "DESTINATION" "share/livox_interfaces/msg")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomMsg.json" "DESTINATION" "share/livox_interfaces/msg")
 
-# install(DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.h")
+# install(DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.h")
 
 # install(FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/livox_interfaces/environment")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/livox_interfaces/environment")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/livox_interfaces/environment")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/livox_interfaces/environment")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/livox_interfaces/environment")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/livox_interfaces/environment")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/livox_interfaces/environment")
 
-# install(DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_typesupport_fastrtps_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_typesupport_fastrtps_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_typesupport_fastrtps_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_typesupport_fastrtps_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_typesupport_fastrtps_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_typesupport_fastrtps_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_typesupport_fastrtps_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_typesupport_fastrtps_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_typesupport_introspection_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_typesupport_introspection_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.h")
+# install(DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_typesupport_introspection_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_typesupport_introspection_c/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.h")
 
-# install(DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_typesupport_introspection_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_typesupport_introspection_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_typesupport_introspection_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_typesupport_introspection_cpp/livox_interfaces/" "DESTINATION" "include/livox_interfaces/livox_interfaces" "PATTERN" "*.hpp")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/livox_interfaces/environment")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/livox_interfaces/environment")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/livox_interfaces/environment")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/livox_interfaces/environment")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/livox_interfaces/environment")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/livox_interfaces/environment")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/livox_interfaces/environment")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/livox_interfaces/environment")
 
-# install(DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_python/livox_interfaces/livox_interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/livox_interfaces-0.0.1-py3.12.egg-info")
-ament_cmake_symlink_install_directory("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_python/livox_interfaces/livox_interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/livox_interfaces-0.0.1-py3.12.egg-info")
+# install(DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_python/livox_interfaces/livox_interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/livox_interfaces-0.0.1-py3.12.egg-info")
+ament_cmake_symlink_install_directory("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_python/livox_interfaces/livox_interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/livox_interfaces-0.0.1-py3.12.egg-info")
 
-# install(DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_py/livox_interfaces/" "DESTINATION" "lib/python3.12/site-packages/livox_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_py/livox_interfaces/" "DESTINATION" "lib/python3.12/site-packages/livox_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_py/livox_interfaces/" "DESTINATION" "lib/python3.12/site-packages/livox_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_py/livox_interfaces/" "DESTINATION" "lib/python3.12/site-packages/livox_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install("TARGETS" "livox_interfaces_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/livox_interfaces")
-include("/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "livox_interfaces_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/livox_interfaces")
-include("/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "livox_interfaces_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/livox_interfaces")
-include("/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/rust_packages/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/rust_packages")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/rust_packages/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/rust_packages/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/rust_packages/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/rust_packages")
 
-# install(DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_rs/livox_interfaces/rust" "DESTINATION" "share/livox_interfaces")
-ament_cmake_symlink_install_directory("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_rs/livox_interfaces/rust" "DESTINATION" "share/livox_interfaces")
+# install(DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_rs/livox_interfaces/rust" "DESTINATION" "share/livox_interfaces")
+ament_cmake_symlink_install_directory("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" DIRECTORY "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_rs/livox_interfaces/rust" "DESTINATION" "share/livox_interfaces")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomPoint.idl" "DESTINATION" "share/livox_interfaces/msg")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomPoint.idl" "DESTINATION" "share/livox_interfaces/msg")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomPoint.idl" "DESTINATION" "share/livox_interfaces/msg")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomPoint.idl" "DESTINATION" "share/livox_interfaces/msg")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomMsg.idl" "DESTINATION" "share/livox_interfaces/msg")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomMsg.idl" "DESTINATION" "share/livox_interfaces/msg")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomMsg.idl" "DESTINATION" "share/livox_interfaces/msg")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomMsg.idl" "DESTINATION" "share/livox_interfaces/msg")
 
-# install(FILES "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomPoint.msg" "DESTINATION" "share/livox_interfaces/msg")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomPoint.msg" "DESTINATION" "share/livox_interfaces/msg")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomPoint.msg" "DESTINATION" "share/livox_interfaces/msg")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomPoint.msg" "DESTINATION" "share/livox_interfaces/msg")
 
-# install(FILES "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomMsg.msg" "DESTINATION" "share/livox_interfaces/msg")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomMsg.msg" "DESTINATION" "share/livox_interfaces/msg")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomMsg.msg" "DESTINATION" "share/livox_interfaces/msg")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomMsg.msg" "DESTINATION" "share/livox_interfaces/msg")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/livox_interfaces/environment")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/livox_interfaces/environment")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/livox_interfaces/environment")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/livox_interfaces/environment")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/livox_interfaces/environment")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/livox_interfaces/environment")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/livox_interfaces/environment")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/livox_interfaces/environment")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/livox_interfaces/environment")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/livox_interfaces/environment")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/livox_interfaces/environment")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/livox_interfaces/environment")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/livox_interfaces/environment")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/livox_interfaces/environment")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/livox_interfaces")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/livox_interfaces")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/livox_interfaces")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/livox_interfaces")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/livox_interfaces")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/livox_interfaces")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/livox_interfaces")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/livox_interfaces")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/livox_interfaces")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/livox_interfaces")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/livox_interfaces")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/livox_interfaces")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/livox_interfaces")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/livox_interfaces")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/livox_interfaces")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/livox_interfaces")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/livox_interfaces")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/livox_interfaces")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/livox_interfaces")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/livox_interfaces")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/livox_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/livox_interfaces/cmake")
 
-# install(FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_core/livox_interfacesConfig.cmake" "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_core/livox_interfacesConfig-version.cmake" "DESTINATION" "share/livox_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_core/livox_interfacesConfig.cmake" "/home/uos-robotics/ws_livox/build/livox_interfaces/ament_cmake_core/livox_interfacesConfig-version.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_core/livox_interfacesConfig.cmake" "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_core/livox_interfacesConfig-version.cmake" "DESTINATION" "share/livox_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_core/livox_interfacesConfig.cmake" "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/ament_cmake_core/livox_interfacesConfig-version.cmake" "DESTINATION" "share/livox_interfaces/cmake")
 
-# install(FILES "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces/package.xml" "DESTINATION" "share/livox_interfaces")
-ament_cmake_symlink_install_files("/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces/package.xml" "DESTINATION" "share/livox_interfaces")
+# install(FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces/package.xml" "DESTINATION" "share/livox_interfaces")
+ament_cmake_symlink_install_files("/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces" FILES "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces/package.xml" "DESTINATION" "share/livox_interfaces")

@@ -1,0 +1,759 @@
+[0.000000] (-) TimerEvent: {}
+[0.000146] (livox_interfaces) JobQueued: {'identifier': 'livox_interfaces', 'dependencies': OrderedDict()}
+[0.000191] (livox_sdk_vendor) JobQueued: {'identifier': 'livox_sdk_vendor', 'dependencies': OrderedDict()}
+[0.000214] (livox_ros2_driver) JobQueued: {'identifier': 'livox_ros2_driver', 'dependencies': OrderedDict({'livox_interfaces': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces', 'livox_sdk_vendor': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor'})}
+[0.000762] (livox_interfaces) JobStarted: {'identifier': 'livox_interfaces'}
+[0.006573] (livox_sdk_vendor) JobStarted: {'identifier': 'livox_sdk_vendor'}
+[0.011447] (livox_interfaces) JobProgress: {'identifier': 'livox_interfaces', 'progress': 'cmake'}
+[0.012243] (livox_interfaces) JobProgress: {'identifier': 'livox_interfaces', 'progress': 'build'}
+[0.013028] (livox_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces', '--', '-j14', '-l14'], 'cwd': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/uos-robotics', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'LANGUAGE': 'ko:en', 'USER': 'uos-robotics', 'LC_TIME': 'ko_KR.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"ko","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.0/lib64:', 'HOME': '/home/uos-robotics', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/uos-robotics/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-eaf3e982-1.12-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '3780', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '4054', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '15101', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'uos-robotics', 'JOURNAL_STREAM': '8:52182', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'uos-robotics', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/home/uos-robotics/.local/bin:/home/uos-robotics/.codex/tmp/arg0/codex-arg06gFDyX:/home/uos-robotics/.local/bin:/home/uos-robotics/.local/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.0/bin:/home/uos-robotics/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/uos-robotics/.vscode/extensions/openai.chatgpt-26.803.61601-linux-arm64/bin/linux-aarch64', 'SESSION_MANAGER': 'local/uos-robotics:@/tmp/.ICE-unix/4023,unix/uos-robotics:/tmp/.ICE-unix/4023', 'INVOCATION_ID': '76e10712c8f74f1bacb741052c4ee248', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '01a042d7-e429-72c0-b60d-5ef36a80ab75', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/uos-robotics/.config/Code/CachedData/fc3def6774c76082adf699d366f31a557ce5573f', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '15101'}), 'shell': False}
+[0.015776] (livox_sdk_vendor) JobProgress: {'identifier': 'livox_sdk_vendor', 'progress': 'cmake'}
+[0.016058] (livox_sdk_vendor) JobProgress: {'identifier': 'livox_sdk_vendor', 'progress': 'build'}
+[0.016335] (livox_sdk_vendor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor', '--', '-j14', '-l14'], 'cwd': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/uos-robotics', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'LANGUAGE': 'ko:en', 'USER': 'uos-robotics', 'LC_TIME': 'ko_KR.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"ko","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.0/lib64:', 'HOME': '/home/uos-robotics', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/uos-robotics/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-eaf3e982-1.12-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '3780', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '4054', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '15101', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'uos-robotics', 'JOURNAL_STREAM': '8:52182', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'uos-robotics', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/home/uos-robotics/.local/bin:/home/uos-robotics/.codex/tmp/arg0/codex-arg06gFDyX:/home/uos-robotics/.local/bin:/home/uos-robotics/.local/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.0/bin:/home/uos-robotics/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/uos-robotics/.vscode/extensions/openai.chatgpt-26.803.61601-linux-arm64/bin/linux-aarch64', 'SESSION_MANAGER': 'local/uos-robotics:@/tmp/.ICE-unix/4023,unix/uos-robotics:/tmp/.ICE-unix/4023', 'INVOCATION_ID': '76e10712c8f74f1bacb741052c4ee248', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '01a042d7-e429-72c0-b60d-5ef36a80ab75', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/uos-robotics/.config/Code/CachedData/fc3def6774c76082adf699d366f31a557ce5573f', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '15101'}), 'shell': False}
+[0.072530] (livox_sdk_vendor) StdoutLine: {'line': b"[ 12%] Performing download step (git clone) for 'livox-sdk-v2.3.1'\n"}
+[0.073192] (livox_interfaces) StdoutLine: {'line': b'[  2%] Generating type hashes for ROS interfaces\n'}
+[0.075272] (livox_interfaces) StdoutLine: {'line': b'[  4%] Generating Rust code for ROS interfaces\n'}
+[0.080033] (livox_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_livox_interfaces\n'}
+[0.092005] (livox_sdk_vendor) StderrLine: {'line': b"Cloning into 'livox-sdk-v2.3.1'...\n"}
+[0.099674] (-) TimerEvent: {}
+[0.200264] (-) TimerEvent: {}
+[0.263050] (livox_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.263621] (livox_interfaces) StdoutLine: {'line': b'creating livox_interfaces.egg-info\n'}
+[0.275449] (livox_interfaces) StdoutLine: {'line': b'writing livox_interfaces.egg-info/PKG-INFO\n'}
+[0.275857] (livox_interfaces) StdoutLine: {'line': b'writing dependency_links to livox_interfaces.egg-info/dependency_links.txt\n'}
+[0.276017] (livox_interfaces) StdoutLine: {'line': b'writing top-level names to livox_interfaces.egg-info/top_level.txt\n'}
+[0.276121] (livox_interfaces) StdoutLine: {'line': b"writing manifest file 'livox_interfaces.egg-info/SOURCES.txt'\n"}
+[0.300367] (-) TimerEvent: {}
+[0.314542] (livox_interfaces) StdoutLine: {'line': b"reading manifest file 'livox_interfaces.egg-info/SOURCES.txt'\n"}
+[0.315094] (livox_interfaces) StdoutLine: {'line': b"writing manifest file 'livox_interfaces.egg-info/SOURCES.txt'\n"}
+[0.366391] (livox_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_livox_interfaces_egg\n'}
+[0.376592] (livox_interfaces) StdoutLine: {'line': b'[  4%] Built target livox_interfaces__rosidl_generator_type_description\n'}
+[0.383091] (livox_interfaces) StdoutLine: {'line': b'[  4%] Built target livox_interfaces__rs\n'}
+[0.389796] (livox_interfaces) StdoutLine: {'line': b'[  6%] Generating C code for ROS interfaces\n'}
+[0.400575] (-) TimerEvent: {}
+[0.401664] (livox_interfaces) StdoutLine: {'line': b'[  8%] Generating C++ code for ROS interfaces\n'}
+[0.500692] (-) TimerEvent: {}
+[0.600915] (-) TimerEvent: {}
+[0.701203] (-) TimerEvent: {}
+[0.747458] (livox_interfaces) StdoutLine: {'line': b'[  8%] Built target livox_interfaces__cpp\n'}
+[0.776894] (livox_interfaces) StdoutLine: {'line': b'[ 11%] Building C object CMakeFiles/livox_interfaces__rosidl_generator_c.dir/rosidl_generator_c/livox_interfaces/msg/detail/custom_point__functions.c.o\n'}
+[0.777386] (livox_interfaces) StdoutLine: {'line': b'[ 13%] Building C object CMakeFiles/livox_interfaces__rosidl_generator_c.dir/rosidl_generator_c/livox_interfaces/msg/detail/custom_point__type_support.c.o\n'}
+[0.777666] (livox_interfaces) StdoutLine: {'line': b'[ 15%] Building C object CMakeFiles/livox_interfaces__rosidl_generator_c.dir/rosidl_generator_c/livox_interfaces/msg/detail/custom_point__description.c.o\n'}
+[0.777980] (livox_interfaces) StdoutLine: {'line': b'[ 17%] Building C object CMakeFiles/livox_interfaces__rosidl_generator_c.dir/rosidl_generator_c/livox_interfaces/msg/detail/custom_msg__description.c.o\n'}
+[0.778737] (livox_interfaces) StdoutLine: {'line': b'[ 20%] Building C object CMakeFiles/livox_interfaces__rosidl_generator_c.dir/rosidl_generator_c/livox_interfaces/msg/detail/custom_msg__type_support.c.o\n'}
+[0.779202] (livox_interfaces) StdoutLine: {'line': b'[ 22%] Building C object CMakeFiles/livox_interfaces__rosidl_generator_c.dir/rosidl_generator_c/livox_interfaces/msg/detail/custom_msg__functions.c.o\n'}
+[0.801354] (-) TimerEvent: {}
+[0.832047] (livox_interfaces) StdoutLine: {'line': b'[ 24%] Linking C shared library liblivox_interfaces__rosidl_generator_c.so\n'}
+[0.881951] (livox_interfaces) StdoutLine: {'line': b'[ 24%] Built target livox_interfaces__rosidl_generator_c\n'}
+[0.893063] (livox_interfaces) StdoutLine: {'line': b'[ 26%] Generating C++ type support for eProsima Fast-RTPS\n'}
+[0.893299] (livox_interfaces) StdoutLine: {'line': b'[ 28%] Generating C type support dispatch for ROS interfaces\n'}
+[0.893815] (livox_interfaces) StdoutLine: {'line': b'[ 31%] Generating C introspection for ROS interfaces\n'}
+[0.894180] (livox_interfaces) StdoutLine: {'line': b'[ 33%] Generating C type support for eProsima Fast-RTPS\n'}
+[0.895010] (livox_interfaces) StdoutLine: {'line': b'[ 35%] Generating C++ type support dispatch for ROS interfaces\n'}
+[0.895277] (livox_interfaces) StdoutLine: {'line': b'[ 37%] Generating C++ introspection for ROS interfaces\n'}
+[0.901441] (-) TimerEvent: {}
+[1.001635] (-) TimerEvent: {}
+[1.102127] (-) TimerEvent: {}
+[1.202383] (-) TimerEvent: {}
+[1.208624] (livox_interfaces) StdoutLine: {'line': b'[ 40%] Building CXX object CMakeFiles/livox_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_interfaces/msg/custom_msg__type_support.cpp.o\n'}
+[1.212533] (livox_interfaces) StdoutLine: {'line': b'[ 42%] Building CXX object CMakeFiles/livox_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_interfaces/msg/custom_point__type_support.cpp.o\n'}
+[1.216938] (livox_interfaces) StdoutLine: {'line': b'[ 44%] Building CXX object CMakeFiles/livox_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_interfaces/msg/custom_msg__type_support.cpp.o\n'}
+[1.221303] (livox_interfaces) StdoutLine: {'line': b'[ 46%] Building CXX object CMakeFiles/livox_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_interfaces/msg/custom_point__type_support.cpp.o\n'}
+[1.227451] (livox_interfaces) StdoutLine: {'line': b'[ 51%] Building CXX object CMakeFiles/livox_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_interfaces/msg/detail/dds_fastrtps/custom_point__type_support.cpp.o\n'}
+[1.227549] (livox_interfaces) StdoutLine: {'line': b'[ 51%] Building CXX object CMakeFiles/livox_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_interfaces/msg/detail/dds_fastrtps/custom_msg__type_support.cpp.o\n'}
+[1.232283] (livox_interfaces) StdoutLine: {'line': b'[ 53%] Building C object CMakeFiles/livox_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_interfaces/msg/detail/custom_point__type_support.c.o\n'}
+[1.232571] (livox_interfaces) StdoutLine: {'line': b'[ 55%] Building C object CMakeFiles/livox_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_interfaces/msg/detail/custom_msg__type_support.c.o\n'}
+[1.270368] (livox_interfaces) StdoutLine: {'line': b'[ 57%] Building CXX object CMakeFiles/livox_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_interfaces/msg/detail/custom_msg__type_support_c.cpp.o\n'}
+[1.271590] (livox_interfaces) StdoutLine: {'line': b'[ 60%] Building CXX object CMakeFiles/livox_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_interfaces/msg/detail/custom_point__type_support_c.cpp.o\n'}
+[1.274171] (livox_interfaces) StdoutLine: {'line': b'[ 62%] Linking CXX shared library liblivox_interfaces__rosidl_typesupport_c.so\n'}
+[1.286929] (livox_interfaces) StdoutLine: {'line': b'[ 64%] Building CXX object CMakeFiles/livox_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_interfaces/msg/detail/custom_point__type_support.cpp.o\n'}
+[1.287176] (livox_interfaces) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/livox_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_interfaces/msg/detail/custom_msg__type_support.cpp.o\n'}
+[1.288402] (livox_interfaces) StdoutLine: {'line': b'[ 68%] Linking C shared library liblivox_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[1.306142] (-) TimerEvent: {}
+[1.321077] (livox_interfaces) StdoutLine: {'line': b'[ 68%] Built target livox_interfaces__rosidl_typesupport_c\n'}
+[1.330296] (livox_interfaces) StdoutLine: {'line': b'[ 68%] Built target livox_interfaces__rosidl_typesupport_introspection_c\n'}
+[1.406284] (-) TimerEvent: {}
+[1.456086] (livox_interfaces) StdoutLine: {'line': b'[ 71%] Linking CXX shared library liblivox_interfaces__rosidl_typesupport_cpp.so\n'}
+[1.504999] (livox_interfaces) StdoutLine: {'line': b'[ 71%] Built target livox_interfaces__rosidl_typesupport_cpp\n'}
+[1.506363] (-) TimerEvent: {}
+[1.580817] (livox_interfaces) StdoutLine: {'line': b'[ 73%] Linking CXX shared library liblivox_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[1.606506] (-) TimerEvent: {}
+[1.649741] (livox_interfaces) StdoutLine: {'line': b'[ 75%] Linking CXX shared library liblivox_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[1.655405] (livox_interfaces) StdoutLine: {'line': b'[ 75%] Built target livox_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[1.677030] (livox_interfaces) StdoutLine: {'line': b'[ 77%] Linking CXX shared library liblivox_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.705693] (livox_interfaces) StdoutLine: {'line': b'[ 77%] Built target livox_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[1.706723] (-) TimerEvent: {}
+[1.758999] (livox_interfaces) StdoutLine: {'line': b'[ 77%] Built target livox_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[1.785754] (livox_interfaces) StdoutLine: {'line': b'[ 77%] Built target livox_interfaces\n'}
+[1.807079] (-) TimerEvent: {}
+[1.809557] (livox_interfaces) StdoutLine: {'line': b'[ 80%] Generating Python code for ROS interfaces\n'}
+[1.907198] (-) TimerEvent: {}
+[1.919463] (livox_sdk_vendor) StderrLine: {'line': b'HEAD is now at 14c533d fix ROS2 Humble build error\n'}
+[1.992570] (livox_sdk_vendor) StdoutLine: {'line': b"[ 25%] Performing update step for 'livox-sdk-v2.3.1'\n"}
+[2.007276] (-) TimerEvent: {}
+[2.023380] (livox_sdk_vendor) StdoutLine: {'line': b"[ 37%] No patch step for 'livox-sdk-v2.3.1'\n"}
+[2.051884] (livox_sdk_vendor) StdoutLine: {'line': b"[ 50%] Performing configure step for 'livox-sdk-v2.3.1'\n"}
+[2.061915] (livox_sdk_vendor) StderrLine: {'line': b'CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[2.062192] (livox_sdk_vendor) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[2.062314] (livox_sdk_vendor) StderrLine: {'line': b'  CMake.\n'}
+[2.062450] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.062548] (livox_sdk_vendor) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[2.062647] (livox_sdk_vendor) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[2.062748] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.062845] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.107398] (-) TimerEvent: {}
+[2.117597] (livox_sdk_vendor) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[2.185524] (livox_sdk_vendor) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[2.207501] (-) TimerEvent: {}
+[2.211515] (livox_sdk_vendor) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.307674] (-) TimerEvent: {}
+[2.312074] (livox_interfaces) StdoutLine: {'line': b'[ 80%] Built target livox_interfaces__py\n'}
+[2.324884] (livox_sdk_vendor) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.336797] (livox_interfaces) StdoutLine: {'line': b'[ 82%] Building C object CMakeFiles/livox_interfaces__rosidl_generator_py.dir/rosidl_generator_py/livox_interfaces/msg/_custom_point_s.c.o\n'}
+[2.337222] (livox_interfaces) StdoutLine: {'line': b'[ 84%] Building C object CMakeFiles/livox_interfaces__rosidl_generator_py.dir/rosidl_generator_py/livox_interfaces/msg/_custom_msg_s.c.o\n'}
+[2.340991] (livox_sdk_vendor) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.341437] (livox_sdk_vendor) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.342278] (livox_sdk_vendor) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.354542] (livox_sdk_vendor) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.407882] (-) TimerEvent: {}
+[2.463794] (livox_interfaces) StdoutLine: {'line': b'[ 86%] Linking C shared library liblivox_interfaces__rosidl_generator_py.so\n'}
+[2.477644] (livox_sdk_vendor) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.499483] (livox_sdk_vendor) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.499989] (livox_sdk_vendor) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.500888] (livox_sdk_vendor) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.502468] (livox_sdk_vendor) StdoutLine: {'line': b'-- main project dir: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1\n'}
+[2.503500] (livox_sdk_vendor) StderrLine: {'line': b'CMake Deprecation Warning at sdk_core/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[2.503628] (livox_sdk_vendor) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[2.503731] (livox_sdk_vendor) StderrLine: {'line': b'  CMake.\n'}
+[2.503828] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.503923] (livox_sdk_vendor) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[2.504019] (livox_sdk_vendor) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[2.504113] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.504209] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.504805] (livox_sdk_vendor) StderrLine: {'line': b'CMake Deprecation Warning at sample/hub/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[2.504906] (livox_sdk_vendor) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[2.504999] (livox_sdk_vendor) StderrLine: {'line': b'  CMake.\n'}
+[2.505090] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.505183] (livox_sdk_vendor) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[2.505277] (livox_sdk_vendor) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[2.505371] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.505463] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.505667] (livox_sdk_vendor) StderrLine: {'line': b'CMake Deprecation Warning at sample/lidar/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[2.505768] (livox_sdk_vendor) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[2.505867] (livox_sdk_vendor) StderrLine: {'line': b'  CMake.\n'}
+[2.505963] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.506079] (livox_sdk_vendor) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[2.506186] (livox_sdk_vendor) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[2.506291] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.506572] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.506669] (livox_sdk_vendor) StderrLine: {'line': b'CMake Deprecation Warning at sample/hub_lvx_file/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[2.506770] (livox_sdk_vendor) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[2.506870] (livox_sdk_vendor) StderrLine: {'line': b'  CMake.\n'}
+[2.507104] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.507213] (livox_sdk_vendor) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[2.507311] (livox_sdk_vendor) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[2.507408] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.507506] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.507601] (livox_sdk_vendor) StderrLine: {'line': b'CMake Deprecation Warning at sample/lidar_lvx_file/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[2.507699] (livox_sdk_vendor) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[2.507802] (livox_sdk_vendor) StderrLine: {'line': b'  CMake.\n'}
+[2.507904] (-) TimerEvent: {}
+[2.507928] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.508116] (livox_sdk_vendor) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[2.508215] (livox_sdk_vendor) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[2.508314] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.508410] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.508608] (livox_sdk_vendor) StderrLine: {'line': b'CMake Deprecation Warning at sample_cc/hub/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[2.508707] (livox_sdk_vendor) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[2.508806] (livox_sdk_vendor) StderrLine: {'line': b'  CMake.\n'}
+[2.508905] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.509002] (livox_sdk_vendor) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[2.509102] (livox_sdk_vendor) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[2.509272] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.509376] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.509475] (livox_sdk_vendor) StderrLine: {'line': b'CMake Deprecation Warning at sample_cc/lidar/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[2.509575] (livox_sdk_vendor) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[2.509672] (livox_sdk_vendor) StderrLine: {'line': b'  CMake.\n'}
+[2.509769] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.509868] (livox_sdk_vendor) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[2.510045] (livox_sdk_vendor) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[2.510165] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.510265] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.510362] (livox_sdk_vendor) StderrLine: {'line': b'CMake Deprecation Warning at sample_cc/trouble_shooting/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[2.510468] (livox_sdk_vendor) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[2.510565] (livox_sdk_vendor) StderrLine: {'line': b'  CMake.\n'}
+[2.510664] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.510761] (livox_sdk_vendor) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[2.510860] (livox_sdk_vendor) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[2.510959] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.511168] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.511264] (livox_sdk_vendor) StderrLine: {'line': b'CMake Deprecation Warning at sample_cc/lidar_utc_sync/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[2.511361] (livox_sdk_vendor) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[2.511458] (livox_sdk_vendor) StderrLine: {'line': b'  CMake.\n'}
+[2.511557] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.511655] (livox_sdk_vendor) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[2.511759] (livox_sdk_vendor) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[2.511858] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.511955] (livox_sdk_vendor) StderrLine: {'line': b'\n'}
+[2.512053] (livox_sdk_vendor) StdoutLine: {'line': b'-- Configuring done (0.4s)\n'}
+[2.516689] (livox_interfaces) StdoutLine: {'line': b'[ 86%] Built target livox_interfaces__rosidl_generator_py\n'}
+[2.540186] (livox_sdk_vendor) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.541857] (livox_interfaces) StdoutLine: {'line': b'[ 88%] Building C object CMakeFiles/livox_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/livox_interfaces/_livox_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\n'}
+[2.542780] (livox_sdk_vendor) StdoutLine: {'line': b'-- Build files have been written to: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-build\n'}
+[2.542873] (livox_interfaces) StdoutLine: {'line': b'[ 91%] Building C object CMakeFiles/livox_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/livox_interfaces/_livox_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\n'}
+[2.543514] (livox_interfaces) StdoutLine: {'line': b'[ 93%] Building C object CMakeFiles/livox_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/livox_interfaces/_livox_interfaces_s.ep.rosidl_typesupport_c.c.o\n'}
+[2.568376] (livox_sdk_vendor) StdoutLine: {'line': b"[ 62%] Performing build step for 'livox-sdk-v2.3.1'\n"}
+[2.608368] (-) TimerEvent: {}
+[2.620858] (livox_sdk_vendor) StdoutLine: {'line': b'[  4%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/io_thread.cpp.o\n'}
+[2.623621] (livox_sdk_vendor) StdoutLine: {'line': b'[  8%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/io_loop.cpp.o\n'}
+[2.623737] (livox_sdk_vendor) StdoutLine: {'line': b'[  8%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/device_discovery.cpp.o\n'}
+[2.623782] (livox_sdk_vendor) StdoutLine: {'line': b'[ 10%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/thread_base.cpp.o\n'}
+[2.623820] (livox_sdk_vendor) StdoutLine: {'line': b'[ 12%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/livox_sdk.cpp.o\n'}
+[2.623856] (livox_sdk_vendor) StdoutLine: {'line': b'[ 14%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/data_handler/lidar_data_handler.cpp.o\n'}
+[2.623895] (livox_sdk_vendor) StdoutLine: {'line': b'[ 16%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/third_party/FastCRC/FastCRCsw.cpp.o\n'}
+[2.623931] (livox_sdk_vendor) StdoutLine: {'line': b'[ 18%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/network/unix/network_util.cpp.o\n'}
+[2.623967] (livox_sdk_vendor) StdoutLine: {'line': b'[  4%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/logging.cpp.o\n'}
+[2.626542] (livox_sdk_vendor) StdoutLine: {'line': b'[ 20%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/data_handler/data_handler.cpp.o\n'}
+[2.626761] (livox_sdk_vendor) StdoutLine: {'line': b'[ 22%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/comm/sdk_protocol.cpp.o\n'}
+[2.626818] (livox_sdk_vendor) StdoutLine: {'line': b'[ 25%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/device_manager.cpp.o\n'}
+[2.626988] (livox_sdk_vendor) StdoutLine: {'line': b'[ 27%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/data_handler/hub_data_handler.cpp.o\n'}
+[2.628928] (livox_sdk_vendor) StdoutLine: {'line': b'[ 29%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/comm/comm_port.cpp.o\n'}
+[2.647405] (livox_interfaces) StdoutLine: {'line': b'[ 95%] Linking C shared module rosidl_generator_py/livox_interfaces/livox_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[2.651246] (livox_interfaces) StdoutLine: {'line': b'[ 97%] Linking C shared module rosidl_generator_py/livox_interfaces/livox_interfaces_s__rosidl_typesupport_c.so\n'}
+[2.658668] (livox_interfaces) StdoutLine: {'line': b'[100%] Linking C shared module rosidl_generator_py/livox_interfaces/livox_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[2.678398] (livox_sdk_vendor) StdoutLine: {'line': b'[ 31%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/command_handler/command_handler.cpp.o\n'}
+[2.690920] (livox_sdk_vendor) StdoutLine: {'line': b'[ 33%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/command_handler/command_channel.cpp.o\n'}
+[2.708557] (-) TimerEvent: {}
+[2.729520] (livox_interfaces) StdoutLine: {'line': b'[100%] Built target livox_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[2.738315] (livox_interfaces) StdoutLine: {'line': b'[100%] Built target livox_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[2.738564] (livox_interfaces) StdoutLine: {'line': b'[100%] Built target livox_interfaces_s__rosidl_typesupport_c\n'}
+[2.773257] (livox_interfaces) CommandEnded: {'returncode': 0}
+[2.774454] (livox_interfaces) JobProgress: {'identifier': 'livox_interfaces', 'progress': 'install'}
+[2.793750] (livox_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces'], 'cwd': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/uos-robotics', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'LANGUAGE': 'ko:en', 'USER': 'uos-robotics', 'LC_TIME': 'ko_KR.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"ko","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.0/lib64:', 'HOME': '/home/uos-robotics', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/uos-robotics/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-eaf3e982-1.12-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '3780', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '4054', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '15101', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'uos-robotics', 'JOURNAL_STREAM': '8:52182', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'uos-robotics', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/home/uos-robotics/.local/bin:/home/uos-robotics/.codex/tmp/arg0/codex-arg06gFDyX:/home/uos-robotics/.local/bin:/home/uos-robotics/.local/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.0/bin:/home/uos-robotics/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/uos-robotics/.vscode/extensions/openai.chatgpt-26.803.61601-linux-arm64/bin/linux-aarch64', 'SESSION_MANAGER': 'local/uos-robotics:@/tmp/.ICE-unix/4023,unix/uos-robotics:/tmp/.ICE-unix/4023', 'INVOCATION_ID': '76e10712c8f74f1bacb741052c4ee248', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '01a042d7-e429-72c0-b60d-5ef36a80ab75', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/uos-robotics/.config/Code/CachedData/fc3def6774c76082adf699d366f31a557ce5573f', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '15101'}), 'shell': False}
+[2.808703] (-) TimerEvent: {}
+[2.813730] (livox_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.817744] (livox_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.818110] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/ament_index/resource_index/rosidl_interfaces/livox_interfaces\n'}
+[2.828442] (livox_sdk_vendor) StdoutLine: {'line': b'[ 35%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/command_handler/hub_command_handler.cpp.o\n'}
+[2.828719] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/msg/CustomPoint.json\n'}
+[2.847854] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/msg/CustomMsg.json\n'}
+[2.864176] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/custom_msg.h\n'}
+[2.879414] (livox_sdk_vendor) StdoutLine: {'line': b'[ 37%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/command_handler/lidar_command_handler.cpp.o\n'}
+[2.881553] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/custom_point.h\n'}
+[2.910011] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_msg__functions.h\n'}
+[2.910318] (-) TimerEvent: {}
+[2.918404] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_msg__struct.h\n'}
+[2.930998] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_msg__type_support.h\n'}
+[2.938355] (livox_sdk_vendor) StdoutLine: {'line': b'[ 39%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/command_handler/command_impl.cpp.o\n'}
+[2.951274] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_point__functions.h\n'}
+[2.974921] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_point__struct.h\n'}
+[2.981872] (livox_sdk_vendor) StdoutLine: {'line': b'[ 41%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/multiple_io/multiple_io_base.cpp.o\n'}
+[2.994688] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_point__type_support.h\n'}
+[3.005058] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.010453] (-) TimerEvent: {}
+[3.019373] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/environment/library_path.sh\n'}
+[3.035375] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/environment/library_path.dsv\n'}
+[3.045608] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[3.069749] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_point__rosidl_typesupport_fastrtps_c.h\n'}
+[3.092542] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.110607] (-) TimerEvent: {}
+[3.118150] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/custom_msg.hpp\n'}
+[3.135892] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/custom_point.hpp\n'}
+[3.157562] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_msg__builder.hpp\n'}
+[3.180479] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_msg__struct.hpp\n'}
+[3.203181] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_msg__traits.hpp\n'}
+[3.205281] (livox_sdk_vendor) StdoutLine: {'line': b'[ 43%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/multiple_io/multiple_io_epoll.cpp.o\n'}
+[3.210729] (-) TimerEvent: {}
+[3.224839] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_msg__type_support.hpp\n'}
+[3.251919] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_point__builder.hpp\n'}
+[3.277317] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_point__struct.hpp\n'}
+[3.278460] (livox_sdk_vendor) StdoutLine: {'line': b'[ 45%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/multiple_io/multiple_io_poll.cpp.o\n'}
+[3.298342] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_point__traits.hpp\n'}
+[3.314159] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_point__type_support.hpp\n'}
+[3.314425] (-) TimerEvent: {}
+[3.330844] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.343569] (livox_sdk_vendor) StdoutLine: {'line': b'[ 47%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/multiple_io/multiple_io_select.cpp.o\n'}
+[3.346833] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.364519] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.397542] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.418165] (-) TimerEvent: {}
+[3.418450] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_msg__rosidl_typesupport_introspection_c.h\n'}
+[3.438264] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_point__rosidl_typesupport_introspection_c.h\n'}
+[3.460633] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.473984] (livox_sdk_vendor) StdoutLine: {'line': b'[ 50%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/multiple_io/multiple_io_kqueue.cpp.o\n'}
+[3.474639] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.483851] (livox_sdk_vendor) StdoutLine: {'line': b'[ 52%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/wake_up/unix/wake_up_pipe.cpp.o\n'}
+[3.485022] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/include/livox_interfaces/livox_interfaces/msg/detail/custom_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.495903] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/environment/pythonpath.sh\n'}
+[3.507941] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/environment/pythonpath.dsv\n'}
+[3.517508] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces-0.0.1-py3.12.egg-info/PKG-INFO\n'}
+[3.519551] (-) TimerEvent: {}
+[3.530818] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces-0.0.1-py3.12.egg-info/SOURCES.txt\n'}
+[3.543442] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces-0.0.1-py3.12.egg-info/dependency_links.txt\n'}
+[3.554155] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces-0.0.1-py3.12.egg-info/top_level.txt\n'}
+[3.566357] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/__init__.py\n'}
+[3.578481] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/_livox_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[3.598710] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/_livox_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.604313] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/_livox_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.615677] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/livox_interfaces_s__rosidl_typesupport_c.so\n'}
+[3.619832] (-) TimerEvent: {}
+[3.631123] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/livox_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[3.643433] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/livox_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[3.655463] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/msg/__init__.py\n'}
+[3.665627] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/msg/_custom_msg.py\n'}
+[3.679773] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/msg/_custom_msg_s.c\n'}
+[3.690004] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/msg/_custom_point.py\n'}
+[3.705040] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/msg/_custom_point_s.c\n'}
+[3.714969] (livox_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/livox_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[3.715355] (livox_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/livox_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[3.715706] (livox_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/livox_interfaces_s__rosidl_typesupport_c.so\n'}
+[3.717735] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/ament_index/resource_index/rust_packages/livox_interfaces\n'}
+[3.720765] (-) TimerEvent: {}
+[3.729833] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/rust/Cargo.toml\n'}
+[3.741224] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/rust/build.rs\n'}
+[3.755678] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/rust/src/lib.rs\n'}
+[3.763849] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/rust/src/msg.rs\n'}
+[3.774463] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/rust/src/msg/rmw.rs\n'}
+[3.789310] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/msg/CustomPoint.idl\n'}
+[3.799139] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/msg/CustomMsg.idl\n'}
+[3.814638] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/msg/CustomPoint.msg\n'}
+[3.821666] (-) TimerEvent: {}
+[3.825552] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/msg/CustomMsg.msg\n'}
+[3.837490] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/ament_index/resource_index/package_run_dependencies/livox_interfaces\n'}
+[3.847410] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/ament_index/resource_index/parent_prefix_path/livox_interfaces\n'}
+[3.856586] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/environment/ament_prefix_path.sh\n'}
+[3.867823] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/environment/ament_prefix_path.dsv\n'}
+[3.879117] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/environment/path.sh\n'}
+[3.890167] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/environment/path.dsv\n'}
+[3.904849] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/local_setup.bash\n'}
+[3.916307] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/local_setup.sh\n'}
+[3.921795] (-) TimerEvent: {}
+[3.925616] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/local_setup.zsh\n'}
+[3.937382] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/local_setup.dsv\n'}
+[3.947298] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/package.dsv\n'}
+[3.958304] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/ament_index/resource_index/packages/livox_interfaces\n'}
+[3.972217] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[3.979077] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.989942] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.000022] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.010320] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.020075] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.022093] (-) TimerEvent: {}
+[4.030278] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.040629] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[4.052497] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/livox_interfacesConfig.cmake\n'}
+[4.060874] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/livox_interfacesConfig-version.cmake\n'}
+[4.076098] (livox_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/package.xml\n'}
+[4.089103] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_generator_c.so\n'}
+[4.089471] (livox_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_generator_c.so" to ""\n'}
+[4.089562] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[4.089605] (livox_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.089645] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.089789] (livox_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.089870] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[4.089956] (livox_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.089994] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_c.so\n'}
+[4.092773] (livox_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[4.092863] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[4.092908] (livox_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.092948] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_cpp.so\n'}
+[4.092986] (livox_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[4.122220] (-) TimerEvent: {}
+[4.136764] (livox_interfaces) StdoutLine: {'line': b"Listing '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces'...\n"}
+[4.137003] (livox_interfaces) StdoutLine: {'line': b"Compiling '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/__init__.py'...\n"}
+[4.137078] (livox_interfaces) StdoutLine: {'line': b"Listing '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/msg'...\n"}
+[4.137122] (livox_interfaces) StdoutLine: {'line': b"Compiling '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/msg/__init__.py'...\n"}
+[4.137161] (livox_interfaces) StdoutLine: {'line': b"Compiling '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/msg/_custom_msg.py'...\n"}
+[4.137199] (livox_interfaces) StdoutLine: {'line': b"Compiling '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages/livox_interfaces/msg/_custom_point.py'...\n"}
+[4.148114] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_generator_py.so\n'}
+[4.154681] (livox_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/liblivox_interfaces__rosidl_generator_py.so" to ""\n'}
+[4.154932] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/export_livox_interfaces__rosidl_generator_cExport.cmake\n'}
+[4.154986] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/export_livox_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.155041] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/export_livox_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.155085] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/export_livox_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.155126] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/export_livox_interfaces__rosidl_generator_cppExport.cmake\n'}
+[4.155164] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/export_livox_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.155201] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/export_livox_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.155239] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/livox_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.155277] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/livox_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.155316] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/livox_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[4.155353] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/livox_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.155390] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/livox_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.155431] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/livox_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.155468] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/livox_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[4.155508] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/livox_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.155545] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/export_livox_interfaces__rosidl_generator_pyExport.cmake\n'}
+[4.157720] (livox_interfaces) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/share/livox_interfaces/cmake/export_livox_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.166273] (livox_interfaces) CommandEnded: {'returncode': 0}
+[4.195746] (livox_interfaces) JobEnded: {'identifier': 'livox_interfaces', 'rc': 0}
+[4.222363] (-) TimerEvent: {}
+[4.322841] (-) TimerEvent: {}
+[4.423354] (-) TimerEvent: {}
+[4.523600] (-) TimerEvent: {}
+[4.623869] (-) TimerEvent: {}
+[4.724140] (-) TimerEvent: {}
+[4.824420] (-) TimerEvent: {}
+[4.924666] (-) TimerEvent: {}
+[5.024916] (-) TimerEvent: {}
+[5.125172] (-) TimerEvent: {}
+[5.225446] (-) TimerEvent: {}
+[5.325728] (-) TimerEvent: {}
+[5.426009] (-) TimerEvent: {}
+[5.463537] (livox_sdk_vendor) StdoutLine: {'line': b'[ 54%] Linking CXX static library liblivox_sdk_static.a\n'}
+[5.526157] (-) TimerEvent: {}
+[5.626434] (-) TimerEvent: {}
+[5.641250] (livox_sdk_vendor) StdoutLine: {'line': b'[ 54%] Built target livox_sdk_static\n'}
+[5.665342] (livox_sdk_vendor) StdoutLine: {'line': b'[ 60%] Building CXX object sample/lidar_lvx_file/CMakeFiles/lidar_lvx_sample.dir/lvx_file.cpp.o\n'}
+[5.665604] (livox_sdk_vendor) StdoutLine: {'line': b'[ 60%] Building CXX object sample/hub_lvx_file/CMakeFiles/hub_lvx_sample.dir/main.cpp.o\n'}
+[5.665682] (livox_sdk_vendor) StdoutLine: {'line': b'[ 60%] Building C object sample/lidar/CMakeFiles/lidar_sample.dir/main.c.o\n'}
+[5.665741] (livox_sdk_vendor) StdoutLine: {'line': b'[ 62%] Building CXX object sample/lidar_lvx_file/CMakeFiles/lidar_lvx_sample.dir/main.cpp.o\n'}
+[5.665780] (livox_sdk_vendor) StdoutLine: {'line': b'[ 66%] Building C object sample/hub/CMakeFiles/hub_sample.dir/main.c.o\n'}
+[5.665818] (livox_sdk_vendor) StdoutLine: {'line': b'[ 66%] Building CXX object sample_cc/hub/CMakeFiles/hub_sample_cc.dir/main.cpp.o\n'}
+[5.665855] (livox_sdk_vendor) StdoutLine: {'line': b'[ 68%] Building CXX object sample/hub_lvx_file/CMakeFiles/hub_lvx_sample.dir/lvx_file.cpp.o\n'}
+[5.665892] (livox_sdk_vendor) StdoutLine: {'line': b'[ 70%] Building CXX object sample_cc/lidar_utc_sync/CMakeFiles/lidar_utc_sync.dir/main.cpp.o\n'}
+[5.665928] (livox_sdk_vendor) StdoutLine: {'line': b'[ 72%] Building CXX object sample_cc/lidar_utc_sync/CMakeFiles/lidar_utc_sync.dir/lds_lidar.cpp.o\n'}
+[5.665964] (livox_sdk_vendor) StdoutLine: {'line': b'[ 75%] Building CXX object sample_cc/trouble_shooting/CMakeFiles/trouble_shooting.dir/main.cpp.o\n'}
+[5.666000] (livox_sdk_vendor) StdoutLine: {'line': b'[ 77%] Building CXX object sample_cc/lidar/CMakeFiles/lidar_sample_cc.dir/lds_lidar.cpp.o\n'}
+[5.666554] (livox_sdk_vendor) StdoutLine: {'line': b'[ 81%] Building CXX object sample_cc/lidar/CMakeFiles/lidar_sample_cc.dir/main.cpp.o\n'}
+[5.666702] (livox_sdk_vendor) StdoutLine: {'line': b'[ 79%] Building CXX object sample_cc/hub/CMakeFiles/hub_sample_cc.dir/lds_hub.cpp.o\n'}
+[5.675408] (livox_sdk_vendor) StdoutLine: {'line': b'[ 83%] Building CXX object sample_cc/lidar_utc_sync/CMakeFiles/lidar_utc_sync.dir/synchro.cpp.o\n'}
+[5.720113] (livox_sdk_vendor) StdoutLine: {'line': b'[ 85%] Linking CXX executable hub_sample\n'}
+[5.721018] (livox_sdk_vendor) StdoutLine: {'line': b'[ 87%] Linking CXX executable lidar_sample\n'}
+[5.726531] (-) TimerEvent: {}
+[5.826765] (-) TimerEvent: {}
+[5.894009] (livox_sdk_vendor) StdoutLine: {'line': b'[ 89%] Linking CXX executable trouble_shooting\n'}
+[5.926897] (-) TimerEvent: {}
+[5.959621] (livox_sdk_vendor) StdoutLine: {'line': b'[ 89%] Built target hub_sample\n'}
+[6.027036] (-) TimerEvent: {}
+[6.064194] (livox_sdk_vendor) StdoutLine: {'line': b'[ 89%] Built target lidar_sample\n'}
+[6.127162] (-) TimerEvent: {}
+[6.155954] (livox_sdk_vendor) StdoutLine: {'line': b'[ 89%] Built target trouble_shooting\n'}
+[6.227298] (-) TimerEvent: {}
+[6.241875] (livox_sdk_vendor) StdoutLine: {'line': b'[ 91%] Linking CXX executable lidar_utc_sync\n'}
+[6.273790] (livox_sdk_vendor) StdoutLine: {'line': b'[ 93%] Linking CXX executable hub_sample_cc\n'}
+[6.290833] (livox_sdk_vendor) StdoutLine: {'line': b'[ 95%] Linking CXX executable lidar_sample_cc\n'}
+[6.327445] (-) TimerEvent: {}
+[6.427699] (-) TimerEvent: {}
+[6.462171] (livox_sdk_vendor) StdoutLine: {'line': b'[ 97%] Linking CXX executable lidar_lvx_sample\n'}
+[6.471118] (livox_sdk_vendor) StdoutLine: {'line': b'[100%] Linking CXX executable hub_lvx_sample\n'}
+[6.488696] (livox_sdk_vendor) StdoutLine: {'line': b'[100%] Built target lidar_utc_sync\n'}
+[6.503780] (livox_sdk_vendor) StdoutLine: {'line': b'[100%] Built target hub_sample_cc\n'}
+[6.517705] (livox_sdk_vendor) StdoutLine: {'line': b'[100%] Built target lidar_sample_cc\n'}
+[6.527773] (-) TimerEvent: {}
+[6.627972] (-) TimerEvent: {}
+[6.695008] (livox_sdk_vendor) StdoutLine: {'line': b'[100%] Built target lidar_lvx_sample\n'}
+[6.704421] (livox_sdk_vendor) StdoutLine: {'line': b'[100%] Built target hub_lvx_sample\n'}
+[6.728068] (-) TimerEvent: {}
+[6.735693] (livox_sdk_vendor) StdoutLine: {'line': b"[ 75%] Performing install step for 'livox-sdk-v2.3.1'\n"}
+[6.807428] (livox_sdk_vendor) StdoutLine: {'line': b'[ 54%] Built target livox_sdk_static\n'}
+[6.828212] (-) TimerEvent: {}
+[6.829911] (livox_sdk_vendor) StdoutLine: {'line': b'[ 58%] Built target lidar_sample\n'}
+[6.831076] (livox_sdk_vendor) StdoutLine: {'line': b'[ 66%] Built target hub_sample\n'}
+[6.831205] (livox_sdk_vendor) StdoutLine: {'line': b'[ 62%] Built target trouble_shooting\n'}
+[6.831262] (livox_sdk_vendor) StdoutLine: {'line': b'[ 72%] Built target lidar_sample_cc\n'}
+[6.831899] (livox_sdk_vendor) StdoutLine: {'line': b'[ 79%] Built target hub_lvx_sample\n'}
+[6.831990] (livox_sdk_vendor) StdoutLine: {'line': b'[ 87%] Built target lidar_utc_sync\n'}
+[6.832095] (livox_sdk_vendor) StdoutLine: {'line': b'[ 93%] Built target hub_sample_cc\n'}
+[6.833063] (livox_sdk_vendor) StdoutLine: {'line': b'[100%] Built target lidar_lvx_sample\n'}
+[6.855434] (livox_sdk_vendor) StdoutLine: {'line': b'Install the project...\n'}
+[6.866856] (livox_sdk_vendor) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.867364] (livox_sdk_vendor) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk_install/lib/liblivox_sdk_static.a\n'}
+[6.879820] (livox_sdk_vendor) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk_install/include/livox_def.h\n'}
+[6.880024] (livox_sdk_vendor) StdoutLine: {'line': b'-- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk_install/include/livox_sdk.h\n'}
+[6.905179] (livox_sdk_vendor) StdoutLine: {'line': b"[ 87%] Completed 'livox-sdk-v2.3.1'\n"}
+[6.928295] (-) TimerEvent: {}
+[6.946462] (livox_sdk_vendor) StdoutLine: {'line': b'[100%] Built target livox-sdk-v2.3.1\n'}
+[6.960800] (livox_sdk_vendor) CommandEnded: {'returncode': 0}
+[6.961801] (livox_sdk_vendor) JobProgress: {'identifier': 'livox_sdk_vendor', 'progress': 'install'}
+[6.962319] (livox_sdk_vendor) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor'], 'cwd': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/uos-robotics', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'LANGUAGE': 'ko:en', 'USER': 'uos-robotics', 'LC_TIME': 'ko_KR.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"ko","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.0/lib64:', 'HOME': '/home/uos-robotics', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/uos-robotics/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-eaf3e982-1.12-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '3780', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '4054', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '15101', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'uos-robotics', 'JOURNAL_STREAM': '8:52182', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'uos-robotics', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/home/uos-robotics/.local/bin:/home/uos-robotics/.codex/tmp/arg0/codex-arg06gFDyX:/home/uos-robotics/.local/bin:/home/uos-robotics/.local/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.0/bin:/home/uos-robotics/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/uos-robotics/.vscode/extensions/openai.chatgpt-26.803.61601-linux-arm64/bin/linux-aarch64', 'SESSION_MANAGER': 'local/uos-robotics:@/tmp/.ICE-unix/4023,unix/uos-robotics:/tmp/.ICE-unix/4023', 'INVOCATION_ID': '76e10712c8f74f1bacb741052c4ee248', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '01a042d7-e429-72c0-b60d-5ef36a80ab75', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/uos-robotics/.config/Code/CachedData/fc3def6774c76082adf699d366f31a557ce5573f', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '15101'}), 'shell': False}
+[6.972284] (livox_sdk_vendor) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.972838] (livox_sdk_vendor) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.973393] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/include/livox_def.h\n'}
+[6.985356] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/include/livox_sdk.h\n'}
+[6.995549] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/lib/liblivox_sdk_static.a\n'}
+[7.007798] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/cmake/Modules/Findlivox_sdk.cmake\n'}
+[7.019424] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/ament_index/resource_index/package_run_dependencies/livox_sdk_vendor\n'}
+[7.028376] (-) TimerEvent: {}
+[7.030384] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/ament_index/resource_index/parent_prefix_path/livox_sdk_vendor\n'}
+[7.040573] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/environment/ament_prefix_path.sh\n'}
+[7.050929] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/environment/ament_prefix_path.dsv\n'}
+[7.060969] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/environment/path.sh\n'}
+[7.071831] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/environment/path.dsv\n'}
+[7.082648] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/local_setup.bash\n'}
+[7.094441] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/local_setup.sh\n'}
+[7.105161] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/local_setup.zsh\n'}
+[7.115557] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/local_setup.dsv\n'}
+[7.127692] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/package.dsv\n'}
+[7.128449] (-) TimerEvent: {}
+[7.139784] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/ament_index/resource_index/packages/livox_sdk_vendor\n'}
+[7.150410] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/cmake/livox_sdk_vendor-extras.cmake\n'}
+[7.160977] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/cmake/livox_sdk_vendorConfig.cmake\n'}
+[7.172029] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/cmake/livox_sdk_vendorConfig-version.cmake\n'}
+[7.183181] (livox_sdk_vendor) StdoutLine: {'line': b'-- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/package.xml\n'}
+[7.198252] (livox_sdk_vendor) CommandEnded: {'returncode': 0}
+[7.216705] (livox_sdk_vendor) JobEnded: {'identifier': 'livox_sdk_vendor', 'rc': 0}
+[7.218918] (livox_ros2_driver) JobStarted: {'identifier': 'livox_ros2_driver'}
+[7.228588] (-) TimerEvent: {}
+[7.230650] (livox_ros2_driver) JobProgress: {'identifier': 'livox_ros2_driver', 'progress': 'cmake'}
+[7.231406] (livox_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver'], 'cwd': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/uos-robotics', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'LANGUAGE': 'ko:en', 'USER': 'uos-robotics', 'LC_TIME': 'ko_KR.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"ko","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.0/lib64', 'HOME': '/home/uos-robotics', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/uos-robotics/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-eaf3e982-1.12-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '3780', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '4054', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '15101', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'uos-robotics', 'JOURNAL_STREAM': '8:52182', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'uos-robotics', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/home/uos-robotics/.local/bin:/home/uos-robotics/.codex/tmp/arg0/codex-arg06gFDyX:/home/uos-robotics/.local/bin:/home/uos-robotics/.local/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.0/bin:/home/uos-robotics/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/uos-robotics/.vscode/extensions/openai.chatgpt-26.803.61601-linux-arm64/bin/linux-aarch64', 'SESSION_MANAGER': 'local/uos-robotics:@/tmp/.ICE-unix/4023,unix/uos-robotics:/tmp/.ICE-unix/4023', 'INVOCATION_ID': '76e10712c8f74f1bacb741052c4ee248', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '01a042d7-e429-72c0-b60d-5ef36a80ab75', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/uos-robotics/.config/Code/CachedData/fc3def6774c76082adf699d366f31a557ce5573f', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '15101'}), 'shell': False}
+[7.301387] (livox_ros2_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[7.328692] (-) TimerEvent: {}
+[7.370688] (livox_ros2_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[7.395710] (livox_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[7.428821] (-) TimerEvent: {}
+[7.508161] (livox_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.526474] (livox_ros2_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.526979] (livox_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.527726] (livox_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.528875] (-) TimerEvent: {}
+[7.540608] (livox_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.629008] (-) TimerEvent: {}
+[7.662152] (livox_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.680399] (livox_ros2_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.680954] (livox_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.681909] (livox_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.683454] (livox_ros2_driver) StdoutLine: {'line': b'-- livox_ros2_driver version: 0.0.1\n'}
+[7.687353] (livox_ros2_driver) StdoutLine: {'line': b'-- Found ament_cmake_auto: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)\n'}
+[7.729067] (-) TimerEvent: {}
+[7.829175] (-) TimerEvent: {}
+[7.880663] (livox_ros2_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[7.929289] (-) TimerEvent: {}
+[7.963908] (livox_ros2_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[8.029454] (-) TimerEvent: {}
+[8.129679] (-) TimerEvent: {}
+[8.178779] (livox_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[8.193718] (livox_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[8.207846] (livox_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.222421] (livox_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.229733] (-) TimerEvent: {}
+[8.273384] (livox_ros2_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[8.275197] (livox_ros2_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[8.329848] (-) TimerEvent: {}
+[8.372251] (livox_ros2_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[8.407206] (livox_ros2_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[8.429930] (-) TimerEvent: {}
+[8.446521] (livox_ros2_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.530030] (-) TimerEvent: {}
+[8.630218] (-) TimerEvent: {}
+[8.644155] (livox_ros2_driver) StderrLine: {'line': b'CMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):\n'}
+[8.644428] (livox_ros2_driver) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[8.644489] (livox_ros2_driver) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[8.644534] (livox_ros2_driver) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[8.644576] (livox_ros2_driver) StderrLine: {'line': b'\n'}
+[8.644695] (livox_ros2_driver) StderrLine: {'line': b'  CMake variable FLANN_ROOT is set to:\n'}
+[8.644745] (livox_ros2_driver) StderrLine: {'line': b'\n'}
+[8.644795] (livox_ros2_driver) StderrLine: {'line': b'    /usr\n'}
+[8.644841] (livox_ros2_driver) StderrLine: {'line': b'\n'}
+[8.644887] (livox_ros2_driver) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[8.644937] (livox_ros2_driver) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[8.644977] (livox_ros2_driver) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[8.645170] (livox_ros2_driver) StderrLine: {'line': b'  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)\n'}
+[8.645208] (livox_ros2_driver) StderrLine: {'line': b'  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)\n'}
+[8.645248] (livox_ros2_driver) StderrLine: {'line': b'  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)\n'}
+[8.645287] (livox_ros2_driver) StderrLine: {'line': b'  /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[8.645337] (livox_ros2_driver) StderrLine: {'line': b'  /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)\n'}
+[8.645376] (livox_ros2_driver) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)\n'}
+[8.645415] (livox_ros2_driver) StderrLine: {'line': b'  CMakeLists.txt:30 (ament_auto_find_build_dependencies)\n'}
+[8.645453] (livox_ros2_driver) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[8.645491] (livox_ros2_driver) StderrLine: {'line': b'\n'}
+[8.645531] (livox_ros2_driver) StdoutLine: {'line': b'-- Found flann version 1.9.2\n'}
+[8.730365] (-) TimerEvent: {}
+[8.830840] (-) TimerEvent: {}
+[8.931126] (-) TimerEvent: {}
+[9.031393] (-) TimerEvent: {}
+[9.047474] (livox_ros2_driver) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[9.047974] (livox_ros2_driver) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5") found components: CXX \n'}
+[9.131542] (-) TimerEvent: {}
+[9.231847] (-) TimerEvent: {}
+[9.332119] (-) TimerEvent: {}
+[9.432428] (-) TimerEvent: {}
+[9.532702] (-) TimerEvent: {}
+[9.633133] (-) TimerEvent: {}
+[9.733838] (-) TimerEvent: {}
+[9.834189] (-) TimerEvent: {}
+[9.934509] (-) TimerEvent: {}
+[10.034767] (-) TimerEvent: {}
+[10.135023] (-) TimerEvent: {}
+[10.235459] (-) TimerEvent: {}
+[10.336201] (-) TimerEvent: {}
+[10.436501] (-) TimerEvent: {}
+[10.536789] (-) TimerEvent: {}
+[10.637041] (-) TimerEvent: {}
+[10.737283] (-) TimerEvent: {}
+[10.777722] (livox_ros2_driver) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[10.801767] (livox_ros2_driver) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.27\n'}
+[10.837369] (-) TimerEvent: {}
+[10.858565] (livox_ros2_driver) StdoutLine: {'line': b'-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[10.860589] (livox_ros2_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[10.937502] (-) TimerEvent: {}
+[10.953898] (livox_ros2_driver) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[10.958121] (livox_ros2_driver) StdoutLine: {'line': b'-- Found Pcap: /usr/lib/aarch64-linux-gnu/libpcap.so  \n'}
+[10.978125] (livox_ros2_driver) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  \n'}
+[10.998780] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") \n'}
+[11.037617] (-) TimerEvent: {}
+[11.137883] (-) TimerEvent: {}
+[11.238174] (-) TimerEvent: {}
+[11.339043] (-) TimerEvent: {}
+[11.439332] (-) TimerEvent: {}
+[11.447972] (livox_ros2_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[11.455913] (livox_ros2_driver) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[11.539430] (-) TimerEvent: {}
+[11.639680] (-) TimerEvent: {}
+[11.739963] (-) TimerEvent: {}
+[11.840244] (-) TimerEvent: {}
+[11.874531] (livox_ros2_driver) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[11.940385] (-) TimerEvent: {}
+[12.040669] (-) TimerEvent: {}
+[12.140971] (-) TimerEvent: {}
+[12.241277] (-) TimerEvent: {}
+[12.302457] (livox_ros2_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[12.341424] (-) TimerEvent: {}
+[12.441705] (-) TimerEvent: {}
+[12.542601] (-) TimerEvent: {}
+[12.642899] (-) TimerEvent: {}
+[12.718004] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[12.718550] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[12.718682] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[12.719661] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[12.720126] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[12.720254] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[12.720366] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.14  \n'}
+[12.722035] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.14  \n'}
+[12.722569] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[12.722847] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[12.722953] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[12.723249] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[12.724012] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  \n'}
+[12.724789] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  \n'}
+[12.725547] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  \n'}
+[12.726347] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  \n'}
+[12.727132] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  \n'}
+[12.727869] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  \n'}
+[12.728718] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  \n'}
+[12.729444] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  \n'}
+[12.730144] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  \n'}
+[12.730438] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.14  \n'}
+[12.730734] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  \n'}
+[12.731449] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  \n'}
+[12.732237] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  \n'}
+[12.742992] (-) TimerEvent: {}
+[12.760579] (livox_ros2_driver) StderrLine: {'line': b'CMake Warning (dev) at CMakeLists.txt:31 (find_package):\n'}
+[12.760878] (livox_ros2_driver) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[12.760995] (livox_ros2_driver) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[12.761096] (livox_ros2_driver) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[12.761197] (livox_ros2_driver) StderrLine: {'line': b'\n'}
+[12.761293] (livox_ros2_driver) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[12.761388] (livox_ros2_driver) StderrLine: {'line': b'\n'}
+[12.761481] (livox_ros2_driver) StderrLine: {'line': b'    /usr\n'}
+[12.761577] (livox_ros2_driver) StderrLine: {'line': b'\n'}
+[12.761670] (livox_ros2_driver) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[12.761766] (livox_ros2_driver) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[12.761879] (livox_ros2_driver) StderrLine: {'line': b'\n'}
+[12.771641] (livox_ros2_driver) StdoutLine: {'line': b'-- Found livox_sdk: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/include  \n'}
+[12.777544] (livox_ros2_driver) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") \n'}
+[12.779130] (livox_ros2_driver) StdoutLine: {'line': b"-- Checking for module 'apr-1'\n"}
+[12.802979] (livox_ros2_driver) StdoutLine: {'line': b'--   Found apr-1, version 1.7.2\n'}
+[12.843108] (-) TimerEvent: {}
+[12.860258] (livox_ros2_driver) StderrLine: {'line': b'/usr/include/apr-1.0\n'}
+[12.860454] (livox_ros2_driver) StderrLine: {'line': b'apr-1\n'}
+[12.881318] (livox_ros2_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[12.906487] (livox_ros2_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[12.910280] (livox_ros2_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[12.910824] (livox_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/rapidjson;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/comon/rapdidxml;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/user_uart;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver\n'}
+[12.910976] (livox_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[12.914141] (livox_ros2_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[12.914258] (livox_ros2_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[12.914965] (livox_ros2_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[12.915070] (livox_ros2_driver) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[12.916059] (livox_ros2_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[12.916793] (livox_ros2_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[12.919917] (livox_ros2_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[12.920230] (livox_ros2_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[12.920701] (livox_ros2_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[12.923003] (livox_ros2_driver) StdoutLine: {'line': b'-- Configuring done (5.7s)\n'}
+[12.943200] (-) TimerEvent: {}
+[12.968465] (livox_ros2_driver) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[12.973616] (livox_ros2_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver\n'}
+[13.013414] (livox_ros2_driver) CommandEnded: {'returncode': 0}
+[13.014907] (livox_ros2_driver) JobProgress: {'identifier': 'livox_ros2_driver', 'progress': 'build'}
+[13.016018] (livox_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver', '--', '-j14', '-l14'], 'cwd': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/uos-robotics', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'LANGUAGE': 'ko:en', 'USER': 'uos-robotics', 'LC_TIME': 'ko_KR.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"ko","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.0/lib64', 'HOME': '/home/uos-robotics', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/uos-robotics/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-eaf3e982-1.12-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '3780', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '4054', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '15101', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'uos-robotics', 'JOURNAL_STREAM': '8:52182', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'uos-robotics', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/home/uos-robotics/.local/bin:/home/uos-robotics/.codex/tmp/arg0/codex-arg06gFDyX:/home/uos-robotics/.local/bin:/home/uos-robotics/.local/bin:/opt/ros/jazzy/bin:/usr/local/cuda-13.0/bin:/home/uos-robotics/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/uos-robotics/.vscode/extensions/openai.chatgpt-26.803.61601-linux-arm64/bin/linux-aarch64', 'SESSION_MANAGER': 'local/uos-robotics:@/tmp/.ICE-unix/4023,unix/uos-robotics:/tmp/.ICE-unix/4023', 'INVOCATION_ID': '76e10712c8f74f1bacb741052c4ee248', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '01a042d7-e429-72c0-b60d-5ef36a80ab75', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/uos-robotics/.config/Code/CachedData/fc3def6774c76082adf699d366f31a557ce5573f', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '15101'}), 'shell': False}
+[13.043299] (-) TimerEvent: {}
+[13.089438] (livox_ros2_driver) StdoutLine: {'line': b'[  6%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lvx_file.cpp.o\n'}
+[13.090988] (livox_ros2_driver) StdoutLine: {'line': b'[ 12%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_hub.cpp.o\n'}
+[13.091100] (livox_ros2_driver) StdoutLine: {'line': b'[ 18%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_lvx.cpp.o\n'}
+[13.091152] (livox_ros2_driver) StdoutLine: {'line': b'[ 25%] Building CXX object CMakeFiles/livox_ros2_driver_node.dir/rclcpp_components/node_main_livox_ros2_driver_node.cpp.o\n'}
+[13.091203] (livox_ros2_driver) StdoutLine: {'line': b'[ 43%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/ldq.cpp.o\n'}
+[13.091246] (livox_ros2_driver) StdoutLine: {'line': b'[ 43%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_lidar.cpp.o\n'}
+[13.091287] (livox_ros2_driver) StdoutLine: {'line': b'[ 43%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds.cpp.o\n'}
+[13.091327] (livox_ros2_driver) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/livox_ros2_driver.dir/timesync/user_uart/user_uart.cpp.o\n'}
+[13.091367] (livox_ros2_driver) StdoutLine: {'line': b'[ 56%] Building CXX object CMakeFiles/livox_ros2_driver.dir/timesync/timesync.cpp.o\n'}
+[13.091406] (livox_ros2_driver) StdoutLine: {'line': b'[ 62%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/livox_ros2_driver.cpp.o\n'}
+[13.092445] (livox_ros2_driver) StdoutLine: {'line': b'[ 68%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lddc.cpp.o\n'}
+[13.092679] (livox_ros2_driver) StdoutLine: {'line': b'[ 81%] Building CXX object CMakeFiles/livox_ros2_driver.dir/common/comm/sdk_protocol.cpp.o\n'}
+[13.092795] (livox_ros2_driver) StdoutLine: {'line': b'[ 81%] Building CXX object CMakeFiles/livox_ros2_driver.dir/common/comm/comm_protocol.cpp.o\n'}
+[13.098756] (livox_ros2_driver) StdoutLine: {'line': b'[ 87%] Building CXX object CMakeFiles/livox_ros2_driver.dir/common/comm/gps_protocol.cpp.o\n'}
+[13.143446] (-) TimerEvent: {}
+[13.218152] (livox_ros2_driver) StderrLine: {'line': b'In file included from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds_lidar.h:36,\n'}
+[13.218462] (livox_ros2_driver) StderrLine: {'line': b'                 from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds_lidar.cpp:25:\n'}
+[13.218526] (livox_ros2_driver) StderrLine: {'line': b'/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/rapidjson/document.h:27:10: fatal error: internal/meta.h: No such file or directory\n'}
+[13.218578] (livox_ros2_driver) StderrLine: {'line': b'   27 | #include "internal/meta.h"\n'}
+[13.218627] (livox_ros2_driver) StderrLine: {'line': b'      |          ^~~~~~~~~~~~~~~~~\n'}
+[13.218672] (livox_ros2_driver) StderrLine: {'line': b'compilation terminated.\n'}
+[13.221465] (livox_ros2_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/livox_ros2_driver.dir/build.make:132: CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_lidar.cpp.o] Error 1\n'}
+[13.221690] (livox_ros2_driver) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[13.222457] (livox_ros2_driver) StderrLine: {'line': b'In file included from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds_hub.cpp:32:\n'}
+[13.222585] (livox_ros2_driver) StderrLine: {'line': b'/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/rapidjson/document.h:27:10: fatal error: internal/meta.h: No such file or directory\n'}
+[13.222638] (livox_ros2_driver) StderrLine: {'line': b'   27 | #include "internal/meta.h"\n'}
+[13.222682] (livox_ros2_driver) StderrLine: {'line': b'      |          ^~~~~~~~~~~~~~~~~\n'}
+[13.222728] (livox_ros2_driver) StderrLine: {'line': b'compilation terminated.\n'}
+[13.224398] (livox_ros2_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/livox_ros2_driver.dir/build.make:146: CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_hub.cpp.o] Error 1\n'}
+[13.243544] (-) TimerEvent: {}
+[13.343791] (-) TimerEvent: {}
+[13.444057] (-) TimerEvent: {}
+[13.544338] (-) TimerEvent: {}
+[13.644647] (-) TimerEvent: {}
+[13.744963] (-) TimerEvent: {}
+[13.845264] (-) TimerEvent: {}
+[13.945574] (-) TimerEvent: {}
+[14.045894] (-) TimerEvent: {}
+[14.146217] (-) TimerEvent: {}
+[14.246561] (-) TimerEvent: {}
+[14.346876] (-) TimerEvent: {}
+[14.447186] (-) TimerEvent: {}
+[14.452538] (livox_ros2_driver) StderrLine: {'line': b'In file included from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds_lidar.h:36,\n'}
+[14.452948] (livox_ros2_driver) StderrLine: {'line': b'                 from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lddc.cpp:38:\n'}
+[14.453086] (livox_ros2_driver) StderrLine: {'line': b'/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/rapidjson/document.h:27:10: fatal error: internal/meta.h: No such file or directory\n'}
+[14.453220] (livox_ros2_driver) StderrLine: {'line': b'   27 | #include "internal/meta.h"\n'}
+[14.453333] (livox_ros2_driver) StderrLine: {'line': b'      |          ^~~~~~~~~~~~~~~~~\n'}
+[14.453440] (livox_ros2_driver) StderrLine: {'line': b'compilation terminated.\n'}
+[14.458209] (livox_ros2_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/livox_ros2_driver.dir/build.make:160: CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lddc.cpp.o] Error 1\n'}
+[14.472744] (livox_ros2_driver) StderrLine: {'line': b'In file included from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds_lidar.h:36,\n'}
+[14.473071] (livox_ros2_driver) StderrLine: {'line': b'                 from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver.cpp:42:\n'}
+[14.473192] (livox_ros2_driver) StderrLine: {'line': b'/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/rapidjson/document.h:27:10: fatal error: internal/meta.h: No such file or directory\n'}
+[14.473324] (livox_ros2_driver) StderrLine: {'line': b'   27 | #include "internal/meta.h"\n'}
+[14.473428] (livox_ros2_driver) StderrLine: {'line': b'      |          ^~~~~~~~~~~~~~~~~\n'}
+[14.473530] (livox_ros2_driver) StderrLine: {'line': b'compilation terminated.\n'}
+[14.478368] (livox_ros2_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/livox_ros2_driver.dir/build.make:174: CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/livox_ros2_driver.cpp.o] Error 1\n'}
+[14.478489] (livox_ros2_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/livox_ros2_driver.dir/all] Error 2\n'}
+[14.478593] (livox_ros2_driver) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[14.547285] (-) TimerEvent: {}
+[14.647538] (-) TimerEvent: {}
+[14.747819] (-) TimerEvent: {}
+[14.848109] (-) TimerEvent: {}
+[14.948412] (-) TimerEvent: {}
+[15.048717] (-) TimerEvent: {}
+[15.149039] (-) TimerEvent: {}
+[15.249389] (-) TimerEvent: {}
+[15.349700] (-) TimerEvent: {}
+[15.450010] (-) TimerEvent: {}
+[15.550339] (-) TimerEvent: {}
+[15.650657] (-) TimerEvent: {}
+[15.751449] (-) TimerEvent: {}
+[15.812995] (livox_ros2_driver) StdoutLine: {'line': b'[ 93%] Linking CXX executable livox_ros2_driver_node\n'}
+[15.851572] (-) TimerEvent: {}
+[15.940144] (livox_ros2_driver) StdoutLine: {'line': b'[ 93%] Built target livox_ros2_driver_node\n'}
+[15.940762] (livox_ros2_driver) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[15.944735] (livox_ros2_driver) CommandEnded: {'returncode': 2}
+[15.951683] (-) TimerEvent: {}
+[15.954233] (livox_ros2_driver) JobEnded: {'identifier': 'livox_ros2_driver', 'rc': 2}
+[15.964823] (-) EventReactorShutdown: {}

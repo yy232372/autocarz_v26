@@ -1,11 +1,11 @@
 # Hashes of file build rules.
-2ae6985175350227e3abaf7659418e86 CMakeFiles/livox-sdk-v2.3.1
-b4f4fd30110900ddb94696bf4035cf0b CMakeFiles/livox-sdk-v2.3.1-complete
-00b8908a260c2a0284331ad6566cd6b9 CMakeFiles/livox_sdk_vendor_uninstall
-84b8baf121520912d8c8cc785ebdacff livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-build
-04a5ef1efb7899d8be582a794e667c74 livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-configure
-9d44d5223417bb232129948bfbb4f5e6 livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-download
-d4b8a405a48c2a0313b31e4491126ea8 livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-install
-4aeced3ac6a2a926c8279f1a9aa93e9c livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-mkdir
-724cb6b44aedf0e8449c66be3904d04c livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-patch
-75d7041bbe3f7880dd5ac60f62e0e4f0 livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-update
+570d16816fb6899274b6608833e632b1 CMakeFiles/livox-sdk-v2.3.1
+aa9be6715b9ea44747c67dfd7dbbd392 CMakeFiles/livox-sdk-v2.3.1-complete
+7ae254b1d6655d543bfa46a7d65342bc CMakeFiles/livox_sdk_vendor_uninstall
+28c2d37bcde7600912272e905c52ade7 livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-build
+75ee64bfae0928628122870f3789db17 livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-configure
+9fd08badae9eb6f27a0a95a7915f7548 livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-download
+3b61f1f42cb5bc89345280f05bf62410 livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-install
+c187ec4af11972836d02040dedc2f1ee livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-mkdir
+5a00d9058992b363f64dd8917fd68c14 livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-patch
+f2d4b5438112f5456a085f39dede61e5 livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-stamp/livox-sdk-v2.3.1-update

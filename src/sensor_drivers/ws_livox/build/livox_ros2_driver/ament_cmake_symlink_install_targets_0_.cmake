@@ -1,1 +1,1 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/uos-robotics/ws_livox/build/livox_ros2_driver/livox_ros2_driver_node" "TARGETS" "livox_ros2_driver_node" "DESTINATION" "lib/livox_ros2_driver")
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver/livox_ros2_driver_node" "TARGETS" "livox_ros2_driver_node" "DESTINATION" "lib/livox_ros2_driver")

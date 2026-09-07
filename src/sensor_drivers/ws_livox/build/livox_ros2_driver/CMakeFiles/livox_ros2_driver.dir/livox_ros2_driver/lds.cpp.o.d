@@ -1,7 +1,7 @@
 CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds.cpp.o: \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds.cpp \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds.cpp \
  /usr/include/stdc-predef.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds.h \
  /usr/include/c++/13/math.h /usr/include/c++/13/cmath \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \
@@ -177,6 +177,6 @@ CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds.cpp.o: \
  /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/ext/concurrence.h \
- /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/ldq.h \
- /home/uos-robotics/ws_livox/install/livox_sdk_vendor/include/livox_def.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/ldq.h \
+ /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/include/livox_def.h \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/13/chrono

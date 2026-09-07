@@ -1,0 +1,96 @@
+ROS 2 (Jazzy) 실차 실행 순서
+
+1) 라이다 이더넷 오프
+
+2) 와이파이 온
+
+3) GPS와 ERP42 시리얼 포트 권한 부여
+
+sudo chmod a+rw /dev/ttyUSB*
+# sudo chmod /dev/ttyA* && sudo chmod 777 /dev/ttyU*
+
+4) 인터넷 연결 확인 (NTRIP 사용)
+
+5) 모든 새 터미널에서 ROS 2 환경 설정 (`roscore`는 실행하지 않음)
+
+source /opt/ros/jazzy/setup.bash
+source ~/ros2_ws/install/setup.bash
+
+6) ISRO-P2 GPS/IMU 드라이버 실행
+
+ros2 launch ISRO_P2_Driver ISRO_P2_Driver.launch.py mode:=serial
+
+7) 새 터미널에서 NTRIP 클라이언트 실행
+
+ros2 run ISRO_P2_Driver ntrip.py
+
+9) 라이다 이더넷 온
+
+10) VLP16 드라이버·PointCloud 실행
+
+# poll 에러가 지속되면 네트워크 설정을 확인한 뒤 필요할 때만 실행
+# sudo ufw disable
+ros2 launch velodyne velodyne-all-nodes-VLP16-launch.py
+
+11) 새 터미널에서 Livox 드라이버 실행
+
+source /opt/ros/jazzy/setup.bash
+source /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/setup.bash
+ros2 launch livox_ros2_driver livox_lidar_launch.py
+
+12) VLP16·Livox 장애물 인식 파이프라인 실행
+
+ros2 launch autocarz autocarz_lidar.launch.py mode:=final
+
+13) 센서 수신과 헤딩을 확인
+
+# 아래 명령은 각각 별도 터미널에서 실행
+ros2 topic hz /fix
+ros2 topic hz /imu/data
+ros2 topic hz /velodyne_points
+ros2 topic hz /livox/lidar
+
+14) 자율주행 벡터 플래너·RViz·ERP42 시리얼 제어 실행
+
+# GPS가 /dev/ttyUSB0이고 ERP42가 /dev/ttyUSB1인 현재 설정 예시
+ros2 launch autocarz autocarz_vector.launch.py mode:=final use_serial:=true serial_port:=/dev/ttyUSB1
+
+15)
+예선 본선 백파일
+
+16) 액션캠on
+
+///// heading 맞추고 라이다 rviz살펴보기
+///// 
+
+## camera data 용
+roslaunch autocarz autocarz_stereo.launch
+rosbag record -o slamdata1.bag /camera/accel/imu_info /camera/gyro/imu_info /imu /odom /stereo/left/camera_info /stereo/left/image_raw /stereo/right/camera_info /stereo/right/image_raw /tf /tf_static /ublox1/fix /ublox2/fix
+
+hyun75385
+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
+
+8) 새창: ERP42 GUI 및 ROS 2 상태 점검
+
+# ERP42 상태 GUI
+ros2 run autocarz ERP42RQT.py
+
+# 아래 점검 명령은 필요한 항목을 각각 별도 터미널에서 실행
+ros2 topic echo /fix --once
+ros2 topic hz /fix
+ros2 topic echo /imu/data --once
+ros2 topic hz /imu/data
+ros2 topic echo /ctrlCmd
+ros2 topic echo /erp42/state
+ros2 topic echo /waypointInfo
+
+# 라이다 장애물 거리 토픽
+ros2 topic echo /vlp/distance_front
+ros2 topic echo /vlp/distance_side_front
+ros2 topic echo /vlp/distance_side_back
+ros2 topic echo /livox/distance_front
+ros2 topic echo /livox/distance_side_front
+ros2 topic echo /livox/distance_side_back
+
+# ROS 2 bag 기록 (필요한 토픽만 남겨서 실행 가능)
+ros2 bag record -o test2 /fix /imu/data /ctrlCmd /odom /erp42/state /waypointInfo /vlp/distance_front /vlp/distance_side_front /vlp/distance_side_back /livox/distance_front /livox/distance_side_front /livox/distance_side_back

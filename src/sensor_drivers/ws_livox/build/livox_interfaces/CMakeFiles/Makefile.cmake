@@ -22,10 +22,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake"
   "rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake"
   "rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake"
-  "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces/CMakeLists.txt"
-  "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomMsg.msg"
-  "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomPoint.msg"
-  "/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces/package.xml"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces/CMakeLists.txt"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomMsg.msg"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces/msg/CustomPoint.msg"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces/package.xml"
   "/opt/ros/jazzy/lib/cmake/fastcdr/fastcdr-config-version.cmake"
   "/opt/ros/jazzy/lib/cmake/fastcdr/fastcdr-config.cmake"
   "/opt/ros/jazzy/lib/cmake/fastcdr/fastcdr-shared-targets-none.cmake"
@@ -653,8 +653,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ament_cmake_environment_hooks/package.dsv"
   "ament_cmake_index/share/ament_index/resource_index/packages/livox_interfaces"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "/home/uos-robotics/ws_livox/build/livox_interfaces/livox_interfaces__py/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "/home/uos-robotics/ws_livox/build/livox_interfaces/livox_interfaces__rs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/livox_interfaces__py/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/livox_interfaces__rs/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -677,6 +677,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/livox_interfaces_s__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake"
   "CMakeFiles/livox_interfaces_s__rosidl_typesupport_introspection_c.dir/DependInfo.cmake"
   "CMakeFiles/livox_interfaces_s__rosidl_typesupport_c.dir/DependInfo.cmake"
-  "/home/uos-robotics/ws_livox/build/livox_interfaces/livox_interfaces__py/CMakeFiles/livox_interfaces__py.dir/DependInfo.cmake"
-  "/home/uos-robotics/ws_livox/build/livox_interfaces/livox_interfaces__rs/CMakeFiles/livox_interfaces__rs.dir/DependInfo.cmake"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/livox_interfaces__py/CMakeFiles/livox_interfaces__py.dir/DependInfo.cmake"
+  "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/livox_interfaces__rs/CMakeFiles/livox_interfaces__rs.dir/DependInfo.cmake"
   )

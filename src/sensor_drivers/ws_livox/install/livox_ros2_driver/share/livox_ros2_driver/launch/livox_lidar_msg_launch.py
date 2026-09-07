@@ -1,1 +1,0 @@
-/home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_ros2_driver/launch/livox_lidar_msg_launch.py

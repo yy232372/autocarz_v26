@@ -1,10 +1,10 @@
 {
   "package_name": "livox_interfaces",
-  "output_dir": "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_cpp/livox_interfaces",
+  "output_dir": "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_cpp/livox_interfaces",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces:msg/CustomPoint.idl",
-    "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces:msg/CustomMsg.idl"
+    "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces:msg/CustomPoint.idl",
+    "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces:msg/CustomMsg.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
@@ -60,8 +60,8 @@
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__type_support.hpp.em",
-    "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomPoint.idl",
-    "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomMsg.idl",
+    "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomPoint.idl",
+    "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces/msg/CustomMsg.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
@@ -96,7 +96,7 @@
     "/opt/ros/jazzy/share/std_msgs/msg/UInt8MultiArray.idl"
   ],
   "type_description_tuples": [
-    "msg/CustomPoint.idl:/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomPoint.json",
-    "msg/CustomMsg.idl:/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomMsg.json"
+    "msg/CustomPoint.idl:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomPoint.json",
+    "msg/CustomMsg.idl:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces/msg/CustomMsg.json"
   ]
 }

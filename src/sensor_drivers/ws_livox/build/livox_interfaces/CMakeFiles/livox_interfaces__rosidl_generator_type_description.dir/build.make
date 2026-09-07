@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces
+CMAKE_SOURCE_DIR = /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uos-robotics/ws_livox/build/livox_interfaces
+CMAKE_BINARY_DIR = /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces
 
 # Utility rule file for livox_interfaces__rosidl_generator_type_description.
 
@@ -73,8 +73,8 @@ rosidl_generator_type_description/livox_interfaces/msg/CustomPoint.json: /opt/ro
 rosidl_generator_type_description/livox_interfaces/msg/CustomPoint.json: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
 rosidl_generator_type_description/livox_interfaces/msg/CustomPoint.json: rosidl_adapter/livox_interfaces/msg/CustomPoint.idl
 rosidl_generator_type_description/livox_interfaces/msg/CustomPoint.json: rosidl_adapter/livox_interfaces/msg/CustomMsg.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/uos-robotics/ws_livox/build/livox_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_type_description__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
+	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_type_description__arguments.json
 
 rosidl_generator_type_description/livox_interfaces/msg/CustomMsg.json: rosidl_generator_type_description/livox_interfaces/msg/CustomPoint.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/livox_interfaces/msg/CustomMsg.json
@@ -94,6 +94,6 @@ CMakeFiles/livox_interfaces__rosidl_generator_type_description.dir/clean:
 .PHONY : CMakeFiles/livox_interfaces__rosidl_generator_type_description.dir/clean
 
 CMakeFiles/livox_interfaces__rosidl_generator_type_description.dir/depend:
-	cd /home/uos-robotics/ws_livox/build/livox_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ws_livox/build/livox_interfaces /home/uos-robotics/ws_livox/build/livox_interfaces /home/uos-robotics/ws_livox/build/livox_interfaces/CMakeFiles/livox_interfaces__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/CMakeFiles/livox_interfaces__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/livox_interfaces__rosidl_generator_type_description.dir/depend
 

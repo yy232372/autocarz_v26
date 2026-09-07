@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "livox_interfaces/msg/detail/custom_point__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "livox_interfaces/msg/detail/custom_point__functions.h"
+#include "livox_interfaces/msg/detail/custom_point__struct.h"
 #include "livox_interfaces/msg/detail/custom_point__type_support.h"
+#include "livox_interfaces/msg/detail/custom_point__functions.h"
 
 #ifdef __cplusplus
 extern "C"

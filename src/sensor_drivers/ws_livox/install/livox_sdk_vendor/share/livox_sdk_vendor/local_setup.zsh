@@ -1,1 +1,0 @@
-/home/uos-robotics/ws_livox/build/livox_sdk_vendor/ament_cmake_environment_hooks/local_setup.zsh

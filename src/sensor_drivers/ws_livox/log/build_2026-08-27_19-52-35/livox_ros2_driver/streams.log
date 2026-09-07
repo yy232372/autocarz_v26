@@ -1,0 +1,172 @@
+[0.015s] Invoking command in '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver': AMENT_PREFIX_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.0/lib64 PYTHONPATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver
+[0.083s] -- The C compiler identification is GNU 13.3.0
+[0.152s] -- The CXX compiler identification is GNU 13.3.0
+[0.177s] -- Detecting C compiler ABI info
+[0.290s] -- Detecting C compiler ABI info - done
+[0.308s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.308s] -- Detecting C compile features
+[0.309s] -- Detecting C compile features - done
+[0.322s] -- Detecting CXX compiler ABI info
+[0.443s] -- Detecting CXX compiler ABI info - done
+[0.462s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.462s] -- Detecting CXX compile features
+[0.463s] -- Detecting CXX compile features - done
+[0.465s] -- livox_ros2_driver version: 0.0.1
+[0.468s] -- Found ament_cmake_auto: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[0.662s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.745s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.960s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.975s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.989s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.004s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.055s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.056s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.154s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.188s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.228s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.425s] CMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[1.426s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.426s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.426s]   cmake_policy command to set the policy and suppress this warning.
+[1.426s] 
+[1.426s]   CMake variable FLANN_ROOT is set to:
+[1.426s] 
+[1.426s]     /usr
+[1.426s] 
+[1.426s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.426s]   .cmake module might still use it.
+[1.426s] Call Stack (most recent call first):
+[1.426s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[1.426s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[1.426s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[1.426s]   /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.426s]   /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.426s]   /opt/ros/jazzy/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[1.426s]   CMakeLists.txt:30 (ament_auto_find_build_dependencies)
+[1.427s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.427s] 
+[1.427s] -- Found flann version 1.9.2
+[1.829s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[1.829s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[3.559s] -- Checking for module 'libusb-1.0'
+[3.583s] --   Found libusb-1.0, version 1.0.27
+[3.640s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[3.642s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.735s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.739s] -- Found Pcap: /usr/lib/aarch64-linux-gnu/libpcap.so  
+[3.759s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+[3.780s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+[4.229s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.237s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.656s] -- Found Qhull version 8.0.2
+[5.084s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.500s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[5.500s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[5.500s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[5.501s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[5.501s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[5.501s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[5.501s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[5.504s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[5.504s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[5.504s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[5.504s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[5.504s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[5.505s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[5.506s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[5.507s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[5.507s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[5.508s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[5.509s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[5.510s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[5.511s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[5.511s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[5.512s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[5.512s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[5.513s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[5.513s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[5.542s] CMake Warning (dev) at CMakeLists.txt:31 (find_package):
+[5.542s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[5.542s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[5.542s]   command to set the policy and suppress this warning.
+[5.542s] 
+[5.542s]   CMake variable PCL_ROOT is set to:
+[5.543s] 
+[5.543s]     /usr
+[5.543s] 
+[5.543s]   For compatibility, CMake is ignoring the variable.
+[5.543s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[5.543s] 
+[5.553s] -- Found livox_sdk: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/include  
+[5.559s] -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+[5.560s] -- Checking for module 'apr-1'
+[5.584s] --   Found apr-1, version 1.7.2
+[5.641s] /usr/include/apr-1.0
+[5.642s] apr-1
+[5.663s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[5.688s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.691s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.692s] -- Configured cppcheck include dirs: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/rapidjson;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/comon/rapdidxml;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/comm;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/timesync/user_uart;/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver
+[5.692s] -- Configured cppcheck exclude dirs and/or files: 
+[5.695s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.695s] -- Configured cpplint exclude dirs and/or files: 
+[5.696s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.696s] -- Configured 'flake8' exclude dirs and/or files: 
+[5.697s] -- Added test 'lint_cmake' to check CMake code style
+[5.698s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.701s] -- Added test 'uncrustify' to check C / C++ code style
+[5.701s] -- Configured uncrustify additional arguments: 
+[5.702s] -- Added test 'xmllint' to check XML markup files
+[5.704s] -- Configuring done (5.7s)
+[5.750s] -- Generating done (0.0s)
+[5.755s] -- Build files have been written to: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver
+[5.795s] Invoked command in '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver' returned '0': AMENT_PREFIX_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.0/lib64 PYTHONPATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_ros2_driver
+[5.798s] Invoking command in '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver': AMENT_PREFIX_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.0/lib64 PYTHONPATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver -- -j14 -l14
+[5.872s] [  6%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lvx_file.cpp.o
+[5.872s] [ 12%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_hub.cpp.o
+[5.872s] [ 18%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_lvx.cpp.o
+[5.872s] [ 25%] Building CXX object CMakeFiles/livox_ros2_driver_node.dir/rclcpp_components/node_main_livox_ros2_driver_node.cpp.o
+[5.872s] [ 43%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/ldq.cpp.o
+[5.872s] [ 43%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_lidar.cpp.o
+[5.872s] [ 43%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds.cpp.o
+[5.872s] [ 50%] Building CXX object CMakeFiles/livox_ros2_driver.dir/timesync/user_uart/user_uart.cpp.o
+[5.872s] [ 56%] Building CXX object CMakeFiles/livox_ros2_driver.dir/timesync/timesync.cpp.o
+[5.872s] [ 62%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/livox_ros2_driver.cpp.o
+[5.874s] [ 68%] Building CXX object CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lddc.cpp.o
+[5.874s] [ 81%] Building CXX object CMakeFiles/livox_ros2_driver.dir/common/comm/sdk_protocol.cpp.o
+[5.874s] [ 81%] Building CXX object CMakeFiles/livox_ros2_driver.dir/common/comm/comm_protocol.cpp.o
+[5.880s] [ 87%] Building CXX object CMakeFiles/livox_ros2_driver.dir/common/comm/gps_protocol.cpp.o
+[5.999s] In file included from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds_lidar.h:36,
+[6.000s]                  from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds_lidar.cpp:25:
+[6.000s] /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/rapidjson/document.h:27:10: fatal error: internal/meta.h: No such file or directory
+[6.000s]    27 | #include "internal/meta.h"
+[6.000s]       |          ^~~~~~~~~~~~~~~~~
+[6.000s] compilation terminated.
+[6.003s] gmake[2]: *** [CMakeFiles/livox_ros2_driver.dir/build.make:132: CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_lidar.cpp.o] Error 1
+[6.003s] gmake[2]: *** Waiting for unfinished jobs....
+[6.004s] In file included from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds_hub.cpp:32:
+[6.004s] /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/rapidjson/document.h:27:10: fatal error: internal/meta.h: No such file or directory
+[6.004s]    27 | #include "internal/meta.h"
+[6.004s]       |          ^~~~~~~~~~~~~~~~~
+[6.004s] compilation terminated.
+[6.005s] gmake[2]: *** [CMakeFiles/livox_ros2_driver.dir/build.make:146: CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lds_hub.cpp.o] Error 1
+[7.234s] In file included from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds_lidar.h:36,
+[7.234s]                  from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lddc.cpp:38:
+[7.234s] /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/rapidjson/document.h:27:10: fatal error: internal/meta.h: No such file or directory
+[7.234s]    27 | #include "internal/meta.h"
+[7.234s]       |          ^~~~~~~~~~~~~~~~~
+[7.235s] compilation terminated.
+[7.239s] gmake[2]: *** [CMakeFiles/livox_ros2_driver.dir/build.make:160: CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/lddc.cpp.o] Error 1
+[7.254s] In file included from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds_lidar.h:36,
+[7.254s]                  from /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver.cpp:42:
+[7.254s] /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_ros2_driver/common/rapidjson/document.h:27:10: fatal error: internal/meta.h: No such file or directory
+[7.254s]    27 | #include "internal/meta.h"
+[7.255s]       |          ^~~~~~~~~~~~~~~~~
+[7.255s] compilation terminated.
+[7.260s] gmake[2]: *** [CMakeFiles/livox_ros2_driver.dir/build.make:174: CMakeFiles/livox_ros2_driver.dir/livox_ros2_driver/livox_ros2_driver.cpp.o] Error 1
+[7.260s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/livox_ros2_driver.dir/all] Error 2
+[7.260s] gmake[1]: *** Waiting for unfinished jobs....
+[8.594s] [ 93%] Linking CXX executable livox_ros2_driver_node
+[8.721s] [ 93%] Built target livox_ros2_driver_node
+[8.722s] gmake: *** [Makefile:146: all] Error 2
+[8.726s] Invoked command in '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver' returned '2': AMENT_PREFIX_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor:/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-13.0/lib64 PYTHONPATH=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_ros2_driver -- -j14 -l14

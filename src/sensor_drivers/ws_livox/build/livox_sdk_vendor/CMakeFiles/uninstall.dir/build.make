@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_sdk_vendor
+CMAKE_SOURCE_DIR = /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_sdk_vendor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uos-robotics/ws_livox/build/livox_sdk_vendor
+CMAKE_BINARY_DIR = /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/uos-robotics/ws_livox/build/livox_sdk_vendor && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_sdk_vendor /home/uos-robotics/ws_livox/src/livox_ros2_driver/livox_sdk_vendor /home/uos-robotics/ws_livox/build/livox_sdk_vendor /home/uos-robotics/ws_livox/build/livox_sdk_vendor /home/uos-robotics/ws_livox/build/livox_sdk_vendor/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_sdk_vendor /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/src/livox_ros2_driver/livox_sdk_vendor /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

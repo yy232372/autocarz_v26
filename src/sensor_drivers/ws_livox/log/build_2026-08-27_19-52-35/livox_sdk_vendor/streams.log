@@ -1,0 +1,203 @@
+[0.011s] Invoking command in '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor -- -j14 -l14
+[0.066s] [ 12%] Performing download step (git clone) for 'livox-sdk-v2.3.1'
+[0.086s] Cloning into 'livox-sdk-v2.3.1'...
+[1.913s] HEAD is now at 14c533d fix ROS2 Humble build error
+[1.986s] [ 25%] Performing update step for 'livox-sdk-v2.3.1'
+[2.017s] [ 37%] No patch step for 'livox-sdk-v2.3.1'
+[2.045s] [ 50%] Performing configure step for 'livox-sdk-v2.3.1'
+[2.056s] CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[2.056s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.056s]   CMake.
+[2.056s] 
+[2.056s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.056s]   CMake that the project does not need compatibility with older versions.
+[2.056s] 
+[2.056s] 
+[2.111s] -- The C compiler identification is GNU 13.3.0
+[2.179s] -- The CXX compiler identification is GNU 13.3.0
+[2.205s] -- Detecting C compiler ABI info
+[2.319s] -- Detecting C compiler ABI info - done
+[2.335s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.335s] -- Detecting C compile features
+[2.336s] -- Detecting C compile features - done
+[2.348s] -- Detecting CXX compiler ABI info
+[2.471s] -- Detecting CXX compiler ABI info - done
+[2.493s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.494s] -- Detecting CXX compile features
+[2.494s] -- Detecting CXX compile features - done
+[2.496s] -- main project dir: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1
+[2.497s] CMake Deprecation Warning at sdk_core/CMakeLists.txt:1 (cmake_minimum_required):
+[2.497s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.497s]   CMake.
+[2.497s] 
+[2.497s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.498s]   CMake that the project does not need compatibility with older versions.
+[2.498s] 
+[2.498s] 
+[2.498s] CMake Deprecation Warning at sample/hub/CMakeLists.txt:1 (cmake_minimum_required):
+[2.498s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.498s]   CMake.
+[2.499s] 
+[2.499s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.499s]   CMake that the project does not need compatibility with older versions.
+[2.499s] 
+[2.499s] 
+[2.499s] CMake Deprecation Warning at sample/lidar/CMakeLists.txt:1 (cmake_minimum_required):
+[2.499s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.499s]   CMake.
+[2.499s] 
+[2.500s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.500s]   CMake that the project does not need compatibility with older versions.
+[2.500s] 
+[2.500s] 
+[2.500s] CMake Deprecation Warning at sample/hub_lvx_file/CMakeLists.txt:1 (cmake_minimum_required):
+[2.500s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.500s]   CMake.
+[2.501s] 
+[2.501s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.501s]   CMake that the project does not need compatibility with older versions.
+[2.501s] 
+[2.501s] 
+[2.501s] CMake Deprecation Warning at sample/lidar_lvx_file/CMakeLists.txt:1 (cmake_minimum_required):
+[2.501s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.501s]   CMake.
+[2.502s] 
+[2.502s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.502s]   CMake that the project does not need compatibility with older versions.
+[2.502s] 
+[2.502s] 
+[2.502s] CMake Deprecation Warning at sample_cc/hub/CMakeLists.txt:1 (cmake_minimum_required):
+[2.502s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.502s]   CMake.
+[2.502s] 
+[2.502s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.503s]   CMake that the project does not need compatibility with older versions.
+[2.503s] 
+[2.503s] 
+[2.503s] CMake Deprecation Warning at sample_cc/lidar/CMakeLists.txt:1 (cmake_minimum_required):
+[2.503s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.503s]   CMake.
+[2.503s] 
+[2.503s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.504s]   CMake that the project does not need compatibility with older versions.
+[2.504s] 
+[2.504s] 
+[2.504s] CMake Deprecation Warning at sample_cc/trouble_shooting/CMakeLists.txt:1 (cmake_minimum_required):
+[2.504s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.504s]   CMake.
+[2.504s] 
+[2.504s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.504s]   CMake that the project does not need compatibility with older versions.
+[2.505s] 
+[2.505s] 
+[2.505s] CMake Deprecation Warning at sample_cc/lidar_utc_sync/CMakeLists.txt:1 (cmake_minimum_required):
+[2.505s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.505s]   CMake.
+[2.505s] 
+[2.505s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.505s]   CMake that the project does not need compatibility with older versions.
+[2.505s] 
+[2.505s] 
+[2.506s] -- Configuring done (0.4s)
+[2.534s] -- Generating done (0.0s)
+[2.536s] -- Build files have been written to: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk-v2.3.1-prefix/src/livox-sdk-v2.3.1-build
+[2.562s] [ 62%] Performing build step for 'livox-sdk-v2.3.1'
+[2.617s] [  4%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/io_thread.cpp.o
+[2.617s] [  8%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/io_loop.cpp.o
+[2.617s] [  8%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/device_discovery.cpp.o
+[2.617s] [ 10%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/thread_base.cpp.o
+[2.617s] [ 12%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/livox_sdk.cpp.o
+[2.617s] [ 14%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/data_handler/lidar_data_handler.cpp.o
+[2.617s] [ 16%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/third_party/FastCRC/FastCRCsw.cpp.o
+[2.617s] [ 18%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/network/unix/network_util.cpp.o
+[2.617s] [  4%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/logging.cpp.o
+[2.620s] [ 20%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/data_handler/data_handler.cpp.o
+[2.620s] [ 22%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/comm/sdk_protocol.cpp.o
+[2.620s] [ 25%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/device_manager.cpp.o
+[2.620s] [ 27%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/data_handler/hub_data_handler.cpp.o
+[2.622s] [ 29%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/comm/comm_port.cpp.o
+[2.672s] [ 31%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/command_handler/command_handler.cpp.o
+[2.685s] [ 33%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/command_handler/command_channel.cpp.o
+[2.822s] [ 35%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/command_handler/hub_command_handler.cpp.o
+[2.873s] [ 37%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/command_handler/lidar_command_handler.cpp.o
+[2.932s] [ 39%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/command_handler/command_impl.cpp.o
+[2.976s] [ 41%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/multiple_io/multiple_io_base.cpp.o
+[3.199s] [ 43%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/multiple_io/multiple_io_epoll.cpp.o
+[3.272s] [ 45%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/multiple_io/multiple_io_poll.cpp.o
+[3.337s] [ 47%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/multiple_io/multiple_io_select.cpp.o
+[3.468s] [ 50%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/multiple_io/multiple_io_kqueue.cpp.o
+[3.477s] [ 52%] Building CXX object sdk_core/CMakeFiles/livox_sdk_static.dir/src/base/wake_up/unix/wake_up_pipe.cpp.o
+[5.457s] [ 54%] Linking CXX static library liblivox_sdk_static.a
+[5.635s] [ 54%] Built target livox_sdk_static
+[5.659s] [ 60%] Building CXX object sample/lidar_lvx_file/CMakeFiles/lidar_lvx_sample.dir/lvx_file.cpp.o
+[5.659s] [ 60%] Building CXX object sample/hub_lvx_file/CMakeFiles/hub_lvx_sample.dir/main.cpp.o
+[5.659s] [ 60%] Building C object sample/lidar/CMakeFiles/lidar_sample.dir/main.c.o
+[5.659s] [ 62%] Building CXX object sample/lidar_lvx_file/CMakeFiles/lidar_lvx_sample.dir/main.cpp.o
+[5.659s] [ 66%] Building C object sample/hub/CMakeFiles/hub_sample.dir/main.c.o
+[5.659s] [ 66%] Building CXX object sample_cc/hub/CMakeFiles/hub_sample_cc.dir/main.cpp.o
+[5.659s] [ 68%] Building CXX object sample/hub_lvx_file/CMakeFiles/hub_lvx_sample.dir/lvx_file.cpp.o
+[5.659s] [ 70%] Building CXX object sample_cc/lidar_utc_sync/CMakeFiles/lidar_utc_sync.dir/main.cpp.o
+[5.659s] [ 72%] Building CXX object sample_cc/lidar_utc_sync/CMakeFiles/lidar_utc_sync.dir/lds_lidar.cpp.o
+[5.659s] [ 75%] Building CXX object sample_cc/trouble_shooting/CMakeFiles/trouble_shooting.dir/main.cpp.o
+[5.659s] [ 77%] Building CXX object sample_cc/lidar/CMakeFiles/lidar_sample_cc.dir/lds_lidar.cpp.o
+[5.660s] [ 81%] Building CXX object sample_cc/lidar/CMakeFiles/lidar_sample_cc.dir/main.cpp.o
+[5.660s] [ 79%] Building CXX object sample_cc/hub/CMakeFiles/hub_sample_cc.dir/lds_hub.cpp.o
+[5.669s] [ 83%] Building CXX object sample_cc/lidar_utc_sync/CMakeFiles/lidar_utc_sync.dir/synchro.cpp.o
+[5.714s] [ 85%] Linking CXX executable hub_sample
+[5.715s] [ 87%] Linking CXX executable lidar_sample
+[5.888s] [ 89%] Linking CXX executable trouble_shooting
+[5.953s] [ 89%] Built target hub_sample
+[6.058s] [ 89%] Built target lidar_sample
+[6.150s] [ 89%] Built target trouble_shooting
+[6.236s] [ 91%] Linking CXX executable lidar_utc_sync
+[6.267s] [ 93%] Linking CXX executable hub_sample_cc
+[6.284s] [ 95%] Linking CXX executable lidar_sample_cc
+[6.456s] [ 97%] Linking CXX executable lidar_lvx_sample
+[6.465s] [100%] Linking CXX executable hub_lvx_sample
+[6.482s] [100%] Built target lidar_utc_sync
+[6.497s] [100%] Built target hub_sample_cc
+[6.511s] [100%] Built target lidar_sample_cc
+[6.689s] [100%] Built target lidar_lvx_sample
+[6.698s] [100%] Built target hub_lvx_sample
+[6.729s] [ 75%] Performing install step for 'livox-sdk-v2.3.1'
+[6.801s] [ 54%] Built target livox_sdk_static
+[6.823s] [ 58%] Built target lidar_sample
+[6.825s] [ 66%] Built target hub_sample
+[6.825s] [ 62%] Built target trouble_shooting
+[6.825s] [ 72%] Built target lidar_sample_cc
+[6.825s] [ 79%] Built target hub_lvx_sample
+[6.825s] [ 87%] Built target lidar_utc_sync
+[6.826s] [ 93%] Built target hub_sample_cc
+[6.827s] [100%] Built target lidar_lvx_sample
+[6.849s] Install the project...
+[6.861s] -- Install configuration: ""
+[6.861s] -- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk_install/lib/liblivox_sdk_static.a
+[6.873s] -- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk_install/include/livox_def.h
+[6.874s] -- Installing: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk_install/include/livox_sdk.h
+[6.899s] [ 87%] Completed 'livox-sdk-v2.3.1'
+[6.940s] [100%] Built target livox-sdk-v2.3.1
+[6.954s] Invoked command in '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor -- -j14 -l14
+[6.956s] Invoking command in '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor
+[6.966s] -- Install configuration: ""
+[6.966s] -- Execute custom install script
+[6.967s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/include/livox_def.h
+[6.979s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/include/livox_sdk.h
+[6.989s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/lib/liblivox_sdk_static.a
+[7.001s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/cmake/Modules/Findlivox_sdk.cmake
+[7.013s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/ament_index/resource_index/package_run_dependencies/livox_sdk_vendor
+[7.024s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/ament_index/resource_index/parent_prefix_path/livox_sdk_vendor
+[7.034s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/environment/ament_prefix_path.sh
+[7.044s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/environment/ament_prefix_path.dsv
+[7.055s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/environment/path.sh
+[7.065s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/environment/path.dsv
+[7.076s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/local_setup.bash
+[7.088s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/local_setup.sh
+[7.099s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/local_setup.zsh
+[7.109s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/local_setup.dsv
+[7.121s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/package.dsv
+[7.133s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/ament_index/resource_index/packages/livox_sdk_vendor
+[7.144s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/cmake/livox_sdk_vendor-extras.cmake
+[7.155s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/cmake/livox_sdk_vendorConfig.cmake
+[7.166s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/cmake/livox_sdk_vendorConfig-version.cmake
+[7.177s] -- Symlinking: /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/install/livox_sdk_vendor/share/livox_sdk_vendor/package.xml
+[7.192s] Invoked command in '/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor

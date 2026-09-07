@@ -1,9 +1,9 @@
 {
   "package_name": "livox_interfaces",
-  "output_dir": "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces",
+  "output_dir": "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_generator_type_description/livox_interfaces",
   "idl_tuples": [
-    "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces:msg/CustomPoint.idl",
-    "/home/uos-robotics/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces:msg/CustomMsg.idl"
+    "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces:msg/CustomPoint.idl",
+    "/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_interfaces/rosidl_adapter/livox_interfaces:msg/CustomMsg.idl"
   ],
   "include_paths": [
     "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
