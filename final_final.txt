@@ -67,9 +67,6 @@ ros2 launch autocarz autocarz_vector.launch.py mode:=final use_serial:=true seri
 roslaunch autocarz autocarz_stereo.launch
 rosbag record -o slamdata1.bag /camera/accel/imu_info /camera/gyro/imu_info /imu /odom /stereo/left/camera_info /stereo/left/image_raw /stereo/right/camera_info /stereo/right/image_raw /tf /tf_static /ublox1/fix /ublox2/fix
 
-hyun75385
-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
-
 8) 새창: ERP42 GUI 및 ROS 2 상태 점검
 
 # ERP42 상태 GUI
