@@ -1,1 +1,0 @@
-cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX=/home/uos-robotics/ros2_ws/src/sensor_drivers/ws_livox/build/livox_sdk_vendor/livox-sdk_install;-DCMAKE_POSITION_INDEPENDENT_CODE=ON;-DCMAKE_CXX_FLAGS=-Wno-c++20-compat;-DCMAKE_BUILD_TYPE=;-GUnix Makefiles;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'
