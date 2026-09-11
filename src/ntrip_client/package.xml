@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ntrip_client</name>
+  <version>2.0.0</version>
+  <description>ROS 2 NTRIP client publishing RTCM corrections and forwarding NMEA.</description>
+  <maintainer email="jnghn42@todo.todo">autocarz</maintainer>
+  <license>MIT</license>
+  <url type="website">https://github.com/LORD-MicroStrain/ntrip_client</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>nmea_msgs</exec_depend>
+  <exec_depend>rtcm_msgs</exec_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

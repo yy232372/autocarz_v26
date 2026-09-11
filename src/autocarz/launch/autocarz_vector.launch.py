@@ -49,8 +49,8 @@ def launch_setup(context, *args, **kwargs):
 
     planner_vector_node = Node(
         package='autocarz',
-        # executable='main.py',  # dual GPS backup path
-        executable='main_isro.py',
+        executable='main.py',  # dual GPS backup path
+        # executable='main_isro.py',
         name='planner_vector',
         output='screen',
         parameters=[
